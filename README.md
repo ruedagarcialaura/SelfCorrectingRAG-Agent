@@ -11,3 +11,4 @@ The system is orchestrated using **LangGraph** to manage a stateful workflow bet
 4.  **Web Search Agent**: Triggers an external search (Tavily/DuckDuckGo) when local knowledge is deemed `IRRELEVANT`.
 5.  **Dynamic Index Updater**: Vectorizes new web findings and updates the local FAISS index, closing the **continuous learning loop**.
 
+Dataset: https://huggingface.co/datasets/AdamLucek/apple-environmental-report-QA-retrieval
