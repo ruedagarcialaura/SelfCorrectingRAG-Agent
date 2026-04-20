@@ -41,11 +41,28 @@ pip install --quiet \
     torch \
     faiss-gpu \
     sentence-transformers \
+    transformers \
+    accelerate \
     langgraph \
     datasets \
+    pandas \
     ragas \
-    transformers \
-    accelerate
+    langchain-groq \
+    langchain-community \
+    langchain-huggingface \
+    python-dotenv
+
+# ── Pre-download Llama 3.1-8B weights ────────────────────────────────────────
+
+echo ""
+echo "[INFO] Pre-downloading Llama 3.1-8B-Instruct weights..."
+echo "       This may take 10-15 minutes depending on connection speed."
+python -c "
+from transformers import AutoTokenizer, AutoModelForCausalLM
+AutoTokenizer.from_pretrained('meta-llama/Llama-3.1-8B-Instruct')
+AutoModelForCausalLM.from_pretrained('meta-llama/Llama-3.1-8B-Instruct')
+print('  Llama weights cached in ~/.cache/huggingface/')
+"
 
 # ── Verify GPU ───────────────────────────────────────────────────────────────
 
@@ -57,11 +74,12 @@ nvidia-smi --query-gpu=name,memory.total --format=csv,noheader 2>/dev/null \
 echo ""
 echo "[INFO] Python package versions:"
 python -c "
-import torch, faiss, sentence_transformers, langgraph, datasets
+import torch, faiss, sentence_transformers, langgraph, datasets, ragas
 print(f'  torch              {torch.__version__}  (CUDA: {torch.cuda.is_available()})')
 print(f'  faiss              {faiss.__version__}')
 print(f'  sentence-transformers {sentence_transformers.__version__}')
 print(f'  datasets           {datasets.__version__}')
+print(f'  ragas              {ragas.__version__}')
 "
 
 # ── Done ─────────────────────────────────────────────────────────────────────
