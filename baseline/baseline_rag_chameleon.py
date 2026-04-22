@@ -193,7 +193,6 @@ def generate(query: str, context_chunks: list[dict]) -> str:
             max_new_tokens=512,
             do_sample=False,
             pad_token_id=gen_tokenizer.pad_token_id,
-            attention_mask=inputs.get("attention_mask"),
         )
     new_tokens = output_ids[0][inputs["input_ids"].shape[-1]:]
     return gen_tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
