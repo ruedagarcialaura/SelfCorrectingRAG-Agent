@@ -1,0 +1,13 @@
+torch
+faiss-gpu
+sentence-transformers
+transformers
+accelerate
+langgraph
+datasets
+pandas
+ragas
+langchain-groq
+langchain-community
+langchain-huggingface
+python-dotenv
