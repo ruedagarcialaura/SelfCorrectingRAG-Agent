@@ -1,5 +1,5 @@
 torch
-faiss-gpu
+faiss-cpu
 sentence-transformers
 transformers
 accelerate
