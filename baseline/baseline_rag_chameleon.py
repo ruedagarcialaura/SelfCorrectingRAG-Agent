@@ -192,8 +192,8 @@ def generate(query: str, context_chunks: list[dict]) -> str:
             **inputs,
             max_new_tokens=512,
             do_sample=False,
-            temperature=1.0,
-            pad_token_id=gen_tokenizer.eos_token_id,
+            pad_token_id=gen_tokenizer.pad_token_id,
+            attention_mask=inputs.get("attention_mask"),
         )
     new_tokens = output_ids[0][inputs["input_ids"].shape[-1]:]
     return gen_tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
@@ -259,7 +259,7 @@ print(f"Results will be saved to: {RESULTS_PATH}\n")
 
 records = []
 start   = time.time()
-BATCH_SIZE = 16  # Process queries in batches to utilize GPU fully
+BATCH_SIZE = 4  # Reduced batch size to prevent GPU OOM or slow CPU offloading
 
 # Configure tokenizer for batching (left-padding required for decoder-only models)
 if getattr(gen_tokenizer, 'pad_token', None) is None:
@@ -288,17 +288,15 @@ for i in range(0, len(val), BATCH_SIZE):
         batch_messages.append(messages)
         
     # 3. Batch tokenize and generate on GPU
-    inputs = gen_tokenizer.apply_chat_template(
-        batch_messages, add_generation_prompt=True, return_tensors="pt", return_dict=True, padding=True
-    ).to(gen_model.device)
+    texts = [gen_tokenizer.apply_chat_template(m, add_generation_prompt=True, tokenize=False) for m in batch_messages]
+    inputs = gen_tokenizer(texts, padding=True, return_tensors="pt", add_special_tokens=False).to(gen_model.device)
     
     with torch.no_grad():
         output_ids = gen_model.generate(
             **inputs,
             max_new_tokens=512,
             do_sample=False,
-            temperature=1.0,
-            pad_token_id=gen_tokenizer.eos_token_id,
+            pad_token_id=gen_tokenizer.pad_token_id,
         )
         
     # 4. Decode new tokens only
@@ -365,7 +363,7 @@ ragas_data = Dataset.from_list([
     for _, row in results_df.iterrows()
 ])
 
-judge_llm = LangchainLLMWrapper(ChatGroq(model="llama-3.1-8b-instant", api_key=GROQ_API_KEY))
+judge_llm = LangchainLLMWrapper(ChatGroq(model="llama-3.1-8b-instant", api_key=GROQ_API_KEY, temperature=0))
 judge_emb = LangchainEmbeddingsWrapper(
     HuggingFaceEmbeddings(model_name=f"sentence-transformers/{ENCODER_MODEL}")
 )
