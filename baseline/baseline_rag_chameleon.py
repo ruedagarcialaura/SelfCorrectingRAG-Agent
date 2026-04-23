@@ -170,7 +170,7 @@ gen_tokenizer = AutoTokenizer.from_pretrained(GENERATOR_MODEL)
 gen_model     = AutoModelForCausalLM.from_pretrained(
     GENERATOR_MODEL,
     torch_dtype=torch.float16,
-    device_map="auto",
+    device_map="cuda:0",
 )
 gen_model.eval()
 
