@@ -2,3 +2,5 @@
 .env.chameleon
 
 crag_env/
+baseline/crag-vectors/
+.pyc
