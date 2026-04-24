@@ -3,6 +3,8 @@ from groq import Groq
 from dotenv import load_dotenv
 from state import GraphState
 
+from tools import retrieve, generate
+
 # We will eventually import your teammate's baseline functions here
 # from tools import retrieve, generate 
 

@@ -1,0 +1,143 @@
+import os
+import time
+import ast
+import pandas as pd
+from datasets import load_dataset, Dataset
+from dotenv import load_dotenv
+
+# Import your LangGraph compiled app
+from main import app 
+
+# Import RAGAS tools
+from ragas import evaluate
+from ragas.metrics.collections import faithfulness, answer_relevancyy
+from ragas.llms import LangchainLLMWrapper
+from ragas.embeddings import LangchainEmbeddingsWrapper
+from langchain_groq import ChatGroq
+from langchain_community.embeddings import HuggingFaceEmbeddings
+
+# ==========================================
+# 1. CONSTANTS & SETUP
+# ==========================================
+load_dotenv()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+assert GROQ_API_KEY, "GROQ_API_KEY not found in environment variables."
+
+EVAL_SAMPLES  = 800
+HF_DATASET_ID = "AdamLucek/apple-environmental-report-QA-retrieval"
+RESULTS_PATH  = "crag_results.csv"
+ENCODER_MODEL = "all-MiniLM-L6-v2"
+
+# ==========================================
+# 2. LOAD DATASET (Exact same as baseline)
+# ==========================================
+print(f"Loading dataset '{HF_DATASET_ID}'...")
+ds  = load_dataset(HF_DATASET_ID)
+val = pd.DataFrame(ds["validation"]).drop_duplicates(subset="question")
+# Seed 42 ensures you get the EXACT same 800 questions as your teammate
+val = val.sample(n=EVAL_SAMPLES, random_state=42).reset_index(drop=True)
+
+print(f"Running LangGraph evaluation on {EVAL_SAMPLES} samples...")
+print(f"Results will be saved to: {RESULTS_PATH}\n")
+
+# ==========================================
+# 3. RUN LANGGRAPH EVALUATION
+# ==========================================
+records = []
+start_time = time.time()
+
+for i, row in val.iterrows():
+    question = row["question"]
+    ground_truth = row["chunk"]
+    
+    # 1. Pass the question into your LangGraph Agent
+    inputs = {"question": question, "steps": []}
+    
+    try:
+        # invoke() runs the whole graph and returns the final state dictionary
+        final_state = app.invoke(inputs)
+        
+        answer = final_state.get("answer", "")
+        # If FAISS was skipped, context might be empty, which is valid in CRAG
+        contexts = final_state.get("context", []) 
+        
+    except Exception as e:
+        print(f"Error on sample {i}: {e}")
+        answer = "Error generating answer."
+        contexts = []
+
+    # 2. Store the results
+    records.append({
+        "question":     question,
+        "ground_truth": ground_truth,
+        "answer":       answer,
+        "contexts":     contexts,
+    })
+    
+    # 3. Logging & Rate Limit Protection
+    elapsed = time.time() - start_time
+    avg = elapsed / (i + 1)
+    remaining = avg * (EVAL_SAMPLES - i - 1)
+    
+    if (i + 1) % 10 == 0:
+        print(f"[{i+1:03d}/{EVAL_SAMPLES}] elapsed: {elapsed/60:.1f} min | remaining: {remaining/60:.1f} min")
+
+    # Save checkpoints every 50 rows just like the baseline
+    if (i + 1) % 50 == 0:
+        pd.DataFrame(records).to_csv(RESULTS_PATH, index=False)
+    
+    # Tiny sleep to avoid Groq API Rate Limits (Tokens Per Minute / Requests Per Minute)
+    time.sleep(0.5) 
+
+# Final save
+pd.DataFrame(records).to_csv(RESULTS_PATH, index=False)
+print(f"\nGraph Generation complete. {len(records)} samples saved to {RESULTS_PATH}\n")
+
+
+# ==========================================
+# 4. RAGAS SCORING (Exact same judge setup)
+# ==========================================
+print("Starting RAGAS Evaluation...")
+
+# Load the CSV we just made
+results_df = pd.read_csv(RESULTS_PATH)
+# Ensure lists are read properly from the CSV
+results_df["contexts"] = results_df["contexts"].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
+
+ragas_data = Dataset.from_list([
+    {
+        "question":     row["question"],
+        "answer":       row["answer"],
+        "contexts":     row["contexts"],
+        "ground_truth": row["ground_truth"],
+    }
+    for _, row in results_df.iterrows()
+])
+
+# Identical judge setup to Baseline Cell 9
+judge_llm = LangchainLLMWrapper(ChatGroq(model="llama-3.1-8b-instant", api_key=GROQ_API_KEY, temperature=0))
+judge_emb = LangchainEmbeddingsWrapper(
+    HuggingFaceEmbeddings(model_name=f"sentence-transformers/{ENCODER_MODEL}")
+)
+
+print(f"Running RAGAS on {len(ragas_data)} samples (Groq judge)...")
+scores = evaluate(
+    dataset=ragas_data,
+    metrics=[faithfulness, answer_relevancy],
+    llm=judge_llm,
+    embeddings=judge_emb,
+)
+
+faithfulness_score     = scores["faithfulness"]
+answer_relevancy_score = scores["answer_relevancy"]
+hallucination_rate     = 1 - faithfulness_score
+
+print(f"\nCRAG Agent — Results ({EVAL_SAMPLES} samples)")
+print(f"  Faithfulness      : {faithfulness_score:.4f}")
+print(f"  Answer Relevancy  : {answer_relevancy_score:.4f}")
+print(f"  Hallucination rate: {hallucination_rate:.4f}")
+
+# Save final scores
+scores_df = scores.to_pandas()
+scores_df.to_csv(RESULTS_PATH.replace(".csv", "_ragas.csv"), index=False)
+print(f"\nFull per-sample scores saved to {RESULTS_PATH.replace('.csv', '_ragas.csv')}")

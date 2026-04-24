@@ -3,4 +3,4 @@
 
 crag_env/
 baseline/crag-vectors/
-.pyc
+*.pyc
