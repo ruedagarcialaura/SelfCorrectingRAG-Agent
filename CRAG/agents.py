@@ -23,8 +23,8 @@ def router_node(state: GraphState):
     You are an expert at classifying user queries.
     Analyze the following user question and classify it into exactly ONE of these three categories:
     1. 'greeting': If the user is just saying hello or asking who you are.
-    2. 'apple_quest': If the question is technical or informative regarding Apple Inc., its sustainability, or its environmental report.
-    3. 'out_of_scope': For any other topic (e.g., sports, politics, recipes).
+    2. 'apple_quest': If the question explicitly mentions Apple, OR if it asks about environmental topics, emissions, energy, recycling, carbon footprint, materials, or sustainability (assume these belong to the Apple Environmental Report context).
+    3. 'out_of_scope': For any other topic (e.g., politics, sports, recipes).
 
     Respond with ONLY the category word. Do not add punctuation or extra text.
     Question: {question}
