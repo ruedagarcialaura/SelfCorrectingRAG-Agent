@@ -40,7 +40,7 @@ RESULTS_PATH  = os.path.expanduser("~/baseline_results.csv")
 ENCODER_MODEL   = "all-MiniLM-L6-v2"
 GENERATOR_MODEL = "meta-llama/Llama-3.1-8B-Instruct"
 TOP_K           = 5
-EVAL_SAMPLES    = 800
+EVAL_SAMPLES    = 400
 HF_DATASET_ID   = "AdamLucek/apple-environmental-report-QA-retrieval"
 
 print(f"Artifacts dir   : {ARTIFACTS_DIR}")

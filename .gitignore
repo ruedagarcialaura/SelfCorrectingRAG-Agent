@@ -2,6 +2,7 @@
 .env.chameleon
 
 crag_env/
+baseline_rag_colab.ipynb
 baseline/crag-vectors/
 *.pyc
 *.csv
