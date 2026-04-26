@@ -40,6 +40,7 @@ ENCODER_MODEL = "all-MiniLM-L6-v2"
 # ==========================================
 print(f"Loading dataset '{HF_DATASET_ID}'...")
 ds  = load_dataset(HF_DATASET_ID)
+ds = ds.select(range(50, 150))
 val = pd.DataFrame(ds["validation"]).drop_duplicates(subset="question")
 # Seed 42 ensures you get the EXACT same 800 questions as your teammate
 val = val.sample(n=EVAL_SAMPLES, random_state=42).reset_index(drop=True)
