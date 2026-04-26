@@ -1,0 +1,15 @@
+{
+  "encoder_model": "all-MiniLM-L6-v2",
+  "embedding_dim": 384,
+  "chunk_size_tokens": 200,
+  "chunk_overlap_tokens": 20,
+  "length_function": "token_count",
+  "max_tokens_limit": 256,
+  "normalize_embeddings": false,
+  "n_source_chunks": 215,
+  "n_sub_chunks": 1158,
+  "hf_dataset": "AdamLucek/apple-environmental-report-QA-retrieval",
+  "faiss_index_type": "IndexFlatL2",
+  "index_metric": "L2",
+  "build_date": "2026-04-21"
+}

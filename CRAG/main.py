@@ -1,6 +1,6 @@
 from langgraph.graph import StateGraph, END
 from state import GraphState
-from agents import router_node, retrieval_node, grader_node, generator_node
+from agents import router_node, retrieval_node, grader_node, generator_node, web_search_node
 
 # ==========================================
 # 1. DEFINE THE CONDITIONAL ROUTING LOGIC
@@ -30,9 +30,7 @@ def decide_route_after_grader(state: GraphState):
         return "generate"
     else:
         print("---GRADER DECISION: Context is irrelevant. (Fallback triggered)---")
-        # In a full CRAG, you would route to a "web_search" node here.
-        # For now, we route to generation, but the generator will know the context failed.
-        return "generate"
+        return "web_search"
 
 
 # ==========================================
@@ -42,10 +40,11 @@ def decide_route_after_grader(state: GraphState):
 # Initialize the graph with your custom state dictionary
 workflow = StateGraph(GraphState)
 
-# Add all the nodes (functions) you created in agents.py
+# Add all the nodes (functions) in agents.py
 workflow.add_node("router", router_node)
 workflow.add_node("retrieve", retrieval_node)
 workflow.add_node("grader", grader_node)
+workflow.add_node("web_search", web_search_node) 
 workflow.add_node("generate", generator_node)
 
 # Set the entry point (where the workflow always starts)
@@ -73,10 +72,13 @@ workflow.add_conditional_edges(
     "grader",
     decide_route_after_grader,
     {
-        "generate": "generate"
-        # "web_search": "web_search" # You can add this node later!
+        "generate": "generate",
+        "web_search": "web_search" 
     }
 )
+
+# Path leaving the Web Search (Straight line to the Generator)
+workflow.add_edge("web_search", "generate") 
 
 # Path leaving the Generator (Ends the workflow)
 workflow.add_edge("generate", END)
@@ -99,7 +101,8 @@ if __name__ == "__main__":
     
     for output in app.stream(inputs_1):
         for key, value in output.items():
-            pass # The print statements inside the nodes will show the progress
+            if "answer" in value:
+                print(f"\nFinal Answer: {value['answer']}")
             
     print(f"\nFinal State Steps: {value.get('steps')}")
 
@@ -113,5 +116,19 @@ if __name__ == "__main__":
     for output in app.stream(inputs_2):
         for key, value in output.items():
             pass 
+            
+    print(f"\nFinal State Steps: {value.get('steps')}")
+
+    # Test 3: The Web Search Fallback Trigger
+    print("\n\n" + "="*50)
+    print("TEST 3: Web Search Fallback Trigger")
+    print("="*50)
+     
+    inputs_3 = {"question": "What is the environmental impact of the Apple Vision Pro according to apple.com?", "steps": []}
+    
+    for output in app.stream(inputs_3):
+        for key, value in output.items():
+            if "answer" in value:
+                print(f"\nFinal Answer: {value['answer']}")
             
     print(f"\nFinal State Steps: {value.get('steps')}")

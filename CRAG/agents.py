@@ -3,10 +3,7 @@ from groq import Groq
 from dotenv import load_dotenv
 from state import GraphState
 
-from tools import retrieve, generate
-
-# We will eventually import your teammate's baseline functions here
-# from tools import retrieve, generate 
+from tools import retrieve, generate, web_search
 
 # Setup Groq Client
 load_dotenv()
@@ -48,18 +45,16 @@ def router_node(state: GraphState):
 
 def retrieval_node(state: GraphState):
     """
-    Node 2: Connects to your teammate's FAISS retrieve tool.
+    Node 2: Connects to the FAISS retrieve tool.
     """
     print("---NODE: RETRIEVAL---")
     question = state["question"]
     steps = state.get("steps", [])
     
-    # FUTURE CODE (Integration):
-    # chunks = retrieve(question) 
-    # extracted_texts = [chunk["text"] for chunk in chunks]
-    
-    # Mocked context for now so you can test the graph locally
-    extracted_texts = ["Apple plans to be 100% carbon neutral by 2030.", "Recycled materials are used in all MacBooks."]
+    #call the retrieve function from tools.py, which interacts with FAISS and returns a
+    #list of top k relevant chunks based on the question.
+    chunks = retrieve(question) 
+    extracted_texts = [chunk["text"] for chunk in chunks]
     
     steps.append("retrieval_node")
     
@@ -128,13 +123,12 @@ def generator_node(state: GraphState):
     """
     print("---NODE: GENERATOR---")
     question = state["question"]
-    context = state.get("context", [])
+    context_list = state.get("context", [])
     steps = state.get("steps", [])
     
-    # FUTURE CODE (Integration):
-    # answer = generate(question, context)
-    
-    answer = "This is a mocked final answer generated based on the FAISS context."
+    # Call the generate function from tools.py, which interacts with either the local Chameleon model
+    #  or the Groq API to produce a final answer based on the question and the retrieved context.
+    answer = generate(question, context_list)
     
     steps.append("generator_node")
     
@@ -142,3 +136,25 @@ def generator_node(state: GraphState):
         "answer": answer,
         "steps": steps
     }
+
+
+def web_search_node(state: dict):
+    """
+    Busca información en internet (dominios de confianza) cuando FAISS falla.
+    """
+    print("---NODE: WEB SEARCH (Dynamic Augmentation)---")
+    question = state["question"]
+    steps = state.get("steps", [])
+    
+    # Llamamos a DuckDuckGo
+    web_results = web_search(question)
+
+    steps.append("web_search_node")
+    
+    # We overwrite the context from FAISS with the web search context
+    return {
+        "context": web_results, 
+        "steps": steps
+    }
+
+    

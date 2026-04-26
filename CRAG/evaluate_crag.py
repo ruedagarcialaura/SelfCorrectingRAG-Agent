@@ -1,19 +1,21 @@
 import os
+import sys
 import time
 import ast
 import pandas as pd
 from datasets import load_dataset, Dataset
 from dotenv import load_dotenv
 
-# Import your LangGraph compiled app
+# Import the LangGraph compiled app
 from main import app 
 
 # Import RAGAS tools
 from ragas import evaluate
-from ragas.metrics.collections import faithfulness, answer_relevancyy
+from ragas.metrics import Faithfulness, AnswerRelevancy
 from ragas.llms import LangchainLLMWrapper
 from ragas.embeddings import LangchainEmbeddingsWrapper
 from langchain_groq import ChatGroq
+from langchain_core.outputs import ChatResult
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
 # ==========================================
@@ -23,7 +25,12 @@ load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 assert GROQ_API_KEY, "GROQ_API_KEY not found in environment variables."
 
-EVAL_SAMPLES  = 800
+if "--samples" in sys.argv:
+    idx = sys.argv.index("--samples")
+    EVAL_SAMPLES = int(sys.argv[idx + 1])
+else:
+    EVAL_SAMPLES = 800
+
 HF_DATASET_ID = "AdamLucek/apple-environmental-report-QA-retrieval"
 RESULTS_PATH  = "crag_results.csv"
 ENCODER_MODEL = "all-MiniLM-L6-v2"
@@ -114,8 +121,35 @@ ragas_data = Dataset.from_list([
     for _, row in results_df.iterrows()
 ])
 
-# Identical judge setup to Baseline Cell 9
-judge_llm = LangchainLLMWrapper(ChatGroq(model="llama-3.1-8b-instant", api_key=GROQ_API_KEY, temperature=0))
+class SafeChatGroq(ChatGroq):
+    def _generate(self, messages, stop=None, run_manager=None, **kwargs):
+        # 1. Miramos cuántas pide RAGAS (si no dice nada, asumimos 1)
+        n_requested = kwargs.pop("n", 1)
+        
+        # 2. ¡EL TRUCO DEFINITIVO! Le decimos a Groq por la fuerza que SOLO haga 1
+        kwargs["n"] = 1 
+        
+        generations = []
+        for _ in range(n_requested):     
+            res = super()._generate(messages, stop=stop, run_manager=run_manager, **kwargs)
+            generations.extend(res.generations)
+        return ChatResult(generations=generations, llm_output=res.llm_output)
+    
+    async def _agenerate(self, messages, stop=None, run_manager=None, **kwargs):
+        n_requested = kwargs.pop("n", 1)
+        
+        # Lo forzamos también en las llamadas asíncronas
+        kwargs["n"] = 1 
+        
+        generations = []
+        for _ in range(n_requested):
+            res = await super()._agenerate(messages, stop=stop, run_manager=run_manager, **kwargs)
+            generations.extend(res.generations)
+        return ChatResult(generations=generations, llm_output=res.llm_output)
+
+safe_groq = SafeChatGroq(model="llama-3.1-8b-instant", api_key=GROQ_API_KEY, temperature=0)
+
+judge_llm = LangchainLLMWrapper(safe_groq)
 judge_emb = LangchainEmbeddingsWrapper(
     HuggingFaceEmbeddings(model_name=f"sentence-transformers/{ENCODER_MODEL}")
 )
@@ -123,13 +157,20 @@ judge_emb = LangchainEmbeddingsWrapper(
 print(f"Running RAGAS on {len(ragas_data)} samples (Groq judge)...")
 scores = evaluate(
     dataset=ragas_data,
-    metrics=[faithfulness, answer_relevancy],
+    metrics=[
+        Faithfulness(), 
+        AnswerRelevancy()
+    ],
     llm=judge_llm,
     embeddings=judge_emb,
 )
 
-faithfulness_score     = scores["faithfulness"]
-answer_relevancy_score = scores["answer_relevancy"]
+# FIX 2: Convertimos a Pandas para calcular la media (promedio) de forma segura
+scores_df = scores.to_pandas()
+
+# Sacamos la media omitiendo los posibles errores
+faithfulness_score     = scores_df["faithfulness"].mean()
+answer_relevancy_score = scores_df["answer_relevancy"].mean()
 hallucination_rate     = 1 - faithfulness_score
 
 print(f"\nCRAG Agent — Results ({EVAL_SAMPLES} samples)")
@@ -138,6 +179,5 @@ print(f"  Answer Relevancy  : {answer_relevancy_score:.4f}")
 print(f"  Hallucination rate: {hallucination_rate:.4f}")
 
 # Save final scores
-scores_df = scores.to_pandas()
 scores_df.to_csv(RESULTS_PATH.replace(".csv", "_ragas.csv"), index=False)
 print(f"\nFull per-sample scores saved to {RESULTS_PATH.replace('.csv', '_ragas.csv')}")

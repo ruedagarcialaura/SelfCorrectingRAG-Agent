@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import faiss
 from groq import Groq
@@ -7,20 +8,36 @@ from dotenv import load_dotenv
 import torch
 from sentence_transformers import SentenceTransformer
 from transformers import AutoTokenizer, AutoModelForCausalLM
+from ddgs import DDGS
 
 # ==========================================
 # 0. LOCAL VS CHAMELEON CONFIG
 # ==========================================
 # false to try locally with Groq API w/out GPU
 # true to run on chameleon with the local model loaded in GPU 
-USE_CHAMELEON_GPU = False 
+USE_CHAMELEON_GPU = "--gpu" in sys.argv
 
 # Load environment variables
 load_dotenv()
 groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-#constants
-SAVE_DIR    = "../baseline/crag-vectors"
+
+if "--vector-dir" in sys.argv:
+    try:
+        idx = sys.argv.index("--vector-dir")
+        SAVE_DIR = sys.argv[idx + 1]
+        print(f"VECTOR PATH: Using custom directory -> {SAVE_DIR}")
+    except IndexError:
+        print("Error: You provided --vector-dir but forgot to type the path!")
+        sys.exit(1)
+else:
+    # AUTOMATIC FALLBACK: This finds the folder so you don't HAVE to type it every time.
+    CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+    ROOT_DIR = os.path.dirname(CURRENT_DIR)
+    SAVE_DIR = os.path.join(ROOT_DIR, "crag-vectors")
+    print(f"VECTOR PATH: Using default path -> {SAVE_DIR}")
+
+
 INDEX_PATH  = os.path.join(SAVE_DIR, "corpus_index.faiss")
 IDMAP_PATH  = os.path.join(SAVE_DIR, "id_map.json")
 
@@ -123,3 +140,42 @@ def generate(query: str, context_list: list[str]) -> str:
             max_tokens=512,
         )
         return response.choices[0].message.content.strip()
+    
+# ==========================================
+# 4. WEB SEARCH TOOL (Dynamic Knowledge Augmentation)
+# ==========================================
+TRUSTED_DOMAINS = [
+    "apple.com", 
+    "epa.gov", 
+    "macrumors.com", 
+    "theverge.com"]
+# US Environmental Protection Agency and Apple official site.
+
+def web_search(query: str, num_results: int = 3) -> list[str]:
+    """
+    Searches the internet using DuckDuckGo, but restricted to only trusted domains.
+    """
+    print("Starting Web Search...")
+    
+    # Make filter to only search within trusted domains
+    domain_filter = " OR ".join([f"site:{domain}" for domain in TRUSTED_DOMAINS])
+    restricted_query = f"{query} ({domain_filter})"
+    
+    fallback_message = "No information found in web search nor FAISS. Please answer saying that there is not enough information to answer this question."
+
+    results_text = []
+    try:
+        with DDGS() as ddgs:
+            results = ddgs.text(restricted_query, max_results=num_results)
+            for r in results:
+                snippet = r.get("body", "")
+                if snippet:
+                    results_text.append(snippet)
+                    
+        if not results_text:
+            return [fallback_message]
+            
+        return results_text
+        
+    except Exception as e:
+        return [fallback_message]
