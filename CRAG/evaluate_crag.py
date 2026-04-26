@@ -39,11 +39,17 @@ ENCODER_MODEL = "all-MiniLM-L6-v2"
 # 2. LOAD DATASET (Exact same as baseline)
 # ==========================================
 print(f"Loading dataset '{HF_DATASET_ID}'...")
-ds  = load_dataset(HF_DATASET_ID)
-ds = ds.select(range(50, 150))
-val = pd.DataFrame(ds["validation"]).drop_duplicates(subset="question")
-# Seed 42 ensures you get the EXACT same 800 questions as your teammate
-val = val.sample(n=EVAL_SAMPLES, random_state=42).reset_index(drop=True)
+ds = load_dataset(HF_DATASET_ID, split="validation")
+val = pd.DataFrame(ds).drop_duplicates(subset="question")
+
+# 1. Mantenemos el sample ORIGINAL para asegurar que la lista es idéntica a la de tu compañero.
+# OJO: Ponemos 800 fijo aquí para que la "mezcla" sea la misma de ayer.
+val = val.sample(n=800, random_state=42).reset_index(drop=True)
+
+# 2. AHORA recortamos la lista para coger solo de la pregunta 50 a la 150.
+val = val.iloc[50:150]
+
+print(f"Dataset ready: {len(val)} unique questions to evaluate.")
 
 print(f"Running LangGraph evaluation on {EVAL_SAMPLES} samples...")
 print(f"Results will be saved to: {RESULTS_PATH}\n")
