@@ -124,7 +124,7 @@ if __name__ == "__main__":
     print("TEST 3: Web Search Fallback Trigger")
     print("="*50)
      
-    inputs_3 = {"question": "What is the environmental impact of the Apple Vision Pro according to apple.com?", "steps": []}
+    inputs_3 = {"question": "What is the carbon footprint of the Apple Vision Pro?", "steps": []}
     
     for output in app.stream(inputs_3):
         for key, value in output.items():
