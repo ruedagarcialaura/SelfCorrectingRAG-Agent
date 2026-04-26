@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 import torch
 from sentence_transformers import SentenceTransformer
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from ddgs import DDGS
 
 # ==========================================
@@ -59,12 +59,24 @@ except Exception as e:
 
 # In chameleon we load the generator model locally on GPU for faster inference. In local testing, we will use the Groq API for generation.  
 if USE_CHAMELEON_GPU:
-    print(f"Loading {GENERATOR_MODEL} on GPU...")
+    print(f"Loading {GENERATOR_MODEL} on GPU with 4-bit Quantization...")
+    
+    # 1. Configuramos la "compresión" a 4 bits
+    quant_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_compute_dtype=torch.float16,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_use_double_quant=True
+    )
+
     gen_tokenizer = AutoTokenizer.from_pretrained(GENERATOR_MODEL)
-    gen_model     = AutoModelForCausalLM.from_pretrained(
+    
+    # 2. Cargamos el modelo con la configuración de cuantización
+    gen_model = AutoModelForCausalLM.from_pretrained(
         GENERATOR_MODEL,
-        torch_dtype=torch.float16,
-        device_map="cuda:0", 
+        quantization_config=quant_config,
+        device_map="auto", # IMPORTANTE: 'auto' repartirá el modelo entre tus 4 GPUs
+        trust_remote_code=True
     )
     gen_model.eval()
 
