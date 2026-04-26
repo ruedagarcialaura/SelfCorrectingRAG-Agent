@@ -18,13 +18,12 @@ from ragas.embeddings import LangchainEmbeddingsWrapper
 load_dotenv()
 ENCODER_MODEL = "all-MiniLM-L6-v2"
 INPUT_CSV = "evaluacion_final_200.csv"
-OUTPUT_CSV = "notas_finales_200_llama.csv"
+OUTPUT_CSV = "notas_finales_200.csv"
 
 # ==========================================
 # 2. LOCAL LLM SETUP (OLLAMA)
 # ==========================================
 print("Connecting to local Ollama (Llama 3)...")
-# Make sure Ollama is running in your background!
 local_llm = ChatOllama(model="llama3", temperature=0)
 judge_llm = LangchainLLMWrapper(local_llm)
 
@@ -33,10 +32,26 @@ judge_emb = LangchainEmbeddingsWrapper(
 )
 
 # ==========================================
-# 3. LOAD DATA & RESUME LOGIC
+# 3. LOAD DATA & RESUME LOGIC (¡Aquí está el arreglo!)
 # ==========================================
 df_in = pd.read_csv(INPUT_CSV)
-df_in["contexts"] = df_in["contexts"].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
+
+# --- EL ARREGLO ---
+# RAGAS necesita que la columna se llame "contexts" (en plural). 
+# Si tu CSV la tiene en singular, la renombramos.
+if "context" in df_in.columns and "contexts" not in df_in.columns:
+    df_in.rename(columns={"context": "contexts"}, inplace=True)
+    print("Corregido: Columna 'context' renombrada a 'contexts'")
+# ------------------
+
+# Intentamos convertir la columna 'contexts' de string a lista. 
+# Si no existe, dará error, así que nos aseguramos de que está.
+if "contexts" in df_in.columns:
+    df_in["contexts"] = df_in["contexts"].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
+else:
+    print("¡ERROR FATAL! No se encuentra ni 'context' ni 'contexts' en tu CSV.")
+    print(f"Las columnas que tienes son: {df_in.columns.tolist()}")
+    exit()
 
 if os.path.exists(OUTPUT_CSV):
     df_out = pd.read_csv(OUTPUT_CSV)
@@ -48,7 +63,7 @@ else:
     print("Starting new evaluation...")
 
 # ==========================================
-# 4. ROW-BY-ROW EVALUATION (Safest for Local)
+# 4. ROW-BY-ROW EVALUATION 
 # ==========================================
 for i in range(start_index, len(df_in)):
     print(f"Evaluating row {i+1}/{len(df_in)}...")
@@ -69,7 +84,7 @@ for i in range(start_index, len(df_in)):
         print(f"✅ Row {i+1} saved to {OUTPUT_CSV}")
         
     except Exception as e:
-        print(f"❌ Error on row {i+1}: {e}")
-        continue # Keep going even if one fails
+        print(f"Error on row {i+1}: {e}")
+        continue 
 
 print("\n--- DONE! Check your notas_finales_200.csv ---")
