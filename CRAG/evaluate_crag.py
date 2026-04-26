@@ -47,7 +47,7 @@ val = pd.DataFrame(ds).drop_duplicates(subset="question")
 val = val.sample(n=800, random_state=42).reset_index(drop=True)
 
 # 2. AHORA recortamos la lista para coger solo de la pregunta 50 a la 150.
-val = val.iloc[50:150]
+val = val.iloc[150:200]
 
 print(f"Dataset ready: {len(val)} unique questions to evaluate.")
 
