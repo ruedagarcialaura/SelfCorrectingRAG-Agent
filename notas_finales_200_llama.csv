@@ -1,0 +1,46 @@
+user_input,retrieved_contexts,response,reference,faithfulness,answer_relevancy
+How does the carbon footprint of the Apple Mac mini compare to other models?,"['October 29, 2024 - According to Apple, these changes have cut the carbon footprint of the Mac by more than 80 percent, and to make up the remaining emissions, Apple ""applies high-quality carbon credits from nature based products"" such as those from the Restore Fund.', 'November 10, 2020 - and reduced the energy needed to use the device, driving down the overall Mac mini carbon · footprint by 34 percent compared with the previous generation.4 Apple is committed to using · carbon life cycle assessments to identify opportunities to drive down product greenhouse gas ·', 'Carbon reductions are calculated against a business-as-usual baseline scenario: No use of clean electricity for manufacturing or product use, beyond what is already available on the latest modeled grid; Apple’s carbon intensity of key materials as of 2015; and Apple’s average mix of transportation modes by product line across three years. Learn more at apple.com/2030. Results are compared to previous-generation 3.2GHz 6-core Intel Core i7-based Mac mini systems with Intel Iris UHD Graphics 630, 64GB of RAM, and 2TB SSD. Published February 25, 2026']","According to the provided context, the carbon footprint of the Apple Mac mini has been reduced by 34 percent compared to the previous generation, as of November 10, 2020. However, there is no information provided about how the carbon footprint of the Mac mini compares to other models, such as the latest or other specific models.","13-inch MacBook Air (2024), Apple M3 chip kg CO 2e 135 144 –
+Storage configurations
+Desktops Unit 256GB 512GB 1TB 4TB 
+iMac, Two ports kg CO 2e 359 – – –
+iMac, Four ports kg CO 2e – 389 – –
+Mac mini (2023), Apple M2 Pro chip kg CO 2e – 150 – –
+Mac mini (2023), Apple M2 chip kg CO 2e 112 126 – –
+Mac Studio (2023), Apple M2 Max kg CO 2e – 290 – –
+Mac Studio (2023), Apple M2 Ultra kg CO 2e – – 346 –
+Mac Pro (2023) kg CO 2e – – 1,572 –Displays Unit
+Studio Display (2022) kg CO 2e 544
+Pro Display XDR with Pro Stand kg CO 2e 974
+HomePod Unit
+HomePod (2nd generation) kg CO 2e 92
+HomePod mini kg CO 2e 42
+Apple Vision Pro Unit
+Apple Vision Pro kg CO 2e 335
+Storage configurations
+Apple TV Unit 64GB 128GB
+Apple TV 4K, Wi-Fi kg CO 2e 43 –
+Apple TV 4K, Wi-Fi + Ethernet kg CO 2e – 462024  Environmental Progress Report  80 Engagement and Advocacy Environmental Initiatives Appendix Introduction Contents DataData
+Energy
+Fiscal year
+Unit 2023 2022 2021 2020 2019
+Corporate facilities
+energy Electricity
+Total MWh 3,487,000 3,199,000 2,854,000 2,580,000 2,427,000
+U.S. MWh 2,830,000 2,614,000 2,377,000 2,192,000 2,075,000
+International MWh 657,000 585,000 477,000 389,000 351,000
+Fuel
+Total MWh 662,950 334,250 467,280 439,170 462,680
+Natural gas MWh 312,490 188,630 203,010 202,360 202,340
+Biogas MWh 218,780 76,280 208,620 210,820 217,140
+Propane liquid MWh 1,030 1,830 40 140 280
+Gasoline MWh 50,760 38,790 34,880 14,910 23,950
+Diesel (other) MWh 57,030 15,610 9,780 9,610 16,450
+Diesel (mobile combustion) MWh 22,860 13,120 10,950 1,330 2,520
+Other
+Steam, heating, and cooling1 MWh 45,370 19,800 22,480 0 0
+Energy efficiency Corporate facilities2
+Electricity savings MWh/year 298,500 290,220 223,940 215,260 118,830
+Fuel savings MMBtu/year 126,540 116,190 110,330 136,820 162,280
+Supplier facilities3
+Electricity savings MWh/year 2,040,000,000 1,620,425,230 1,418,825,350 1,101,440 943,890
+Fuel savings MMBtu/year 2,281,060 2,038,930 1,047,440 752,680 25,120",,

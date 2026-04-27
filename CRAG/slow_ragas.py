@@ -24,7 +24,7 @@ OUTPUT_CSV = "notas_finales_200.csv"
 # 2. LOCAL LLM SETUP (OLLAMA)
 # ==========================================
 print("Connecting to local Ollama (Llama 3)...")
-local_llm = ChatOllama(model="llama3", temperature=0)
+local_llm = ChatOllama(model="llama3.2", temperature=0)
 judge_llm = LangchainLLMWrapper(local_llm)
 
 judge_emb = LangchainEmbeddingsWrapper(

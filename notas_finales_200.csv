@@ -1,0 +1,1124 @@
+user_input,retrieved_contexts,response,reference,faithfulness,answer_relevancy
+How does the carbon footprint of the Apple Mac mini compare to other models?,"['October 29, 2024 - According to Apple, these changes have cut the carbon footprint of the Mac by more than 80 percent, and to make up the remaining emissions, Apple ""applies high-quality carbon credits from nature based products"" such as those from the Restore Fund.', 'November 10, 2020 - and reduced the energy needed to use the device, driving down the overall Mac mini carbon · footprint by 34 percent compared with the previous generation.4 Apple is committed to using · carbon life cycle assessments to identify opportunities to drive down product greenhouse gas ·', 'Carbon reductions are calculated against a business-as-usual baseline scenario: No use of clean electricity for manufacturing or product use, beyond what is already available on the latest modeled grid; Apple’s carbon intensity of key materials as of 2015; and Apple’s average mix of transportation modes by product line across three years. Learn more at apple.com/2030. Results are compared to previous-generation 3.2GHz 6-core Intel Core i7-based Mac mini systems with Intel Iris UHD Graphics 630, 64GB of RAM, and 2TB SSD. Published February 25, 2026']","According to the provided context, the carbon footprint of the Apple Mac mini has been reduced by 34 percent compared to the previous generation, as of November 10, 2020. However, there is no information provided about how the carbon footprint of the Mac mini compares to other models, such as the latest or other specific models.","13-inch MacBook Air (2024), Apple M3 chip kg CO 2e 135 144 –
+Storage configurations
+Desktops Unit 256GB 512GB 1TB 4TB 
+iMac, Two ports kg CO 2e 359 – – –
+iMac, Four ports kg CO 2e – 389 – –
+Mac mini (2023), Apple M2 Pro chip kg CO 2e – 150 – –
+Mac mini (2023), Apple M2 chip kg CO 2e 112 126 – –
+Mac Studio (2023), Apple M2 Max kg CO 2e – 290 – –
+Mac Studio (2023), Apple M2 Ultra kg CO 2e – – 346 –
+Mac Pro (2023) kg CO 2e – – 1,572 –Displays Unit
+Studio Display (2022) kg CO 2e 544
+Pro Display XDR with Pro Stand kg CO 2e 974
+HomePod Unit
+HomePod (2nd generation) kg CO 2e 92
+HomePod mini kg CO 2e 42
+Apple Vision Pro Unit
+Apple Vision Pro kg CO 2e 335
+Storage configurations
+Apple TV Unit 64GB 128GB
+Apple TV 4K, Wi-Fi kg CO 2e 43 –
+Apple TV 4K, Wi-Fi + Ethernet kg CO 2e – 462024  Environmental Progress Report  80 Engagement and Advocacy Environmental Initiatives Appendix Introduction Contents DataData
+Energy
+Fiscal year
+Unit 2023 2022 2021 2020 2019
+Corporate facilities
+energy Electricity
+Total MWh 3,487,000 3,199,000 2,854,000 2,580,000 2,427,000
+U.S. MWh 2,830,000 2,614,000 2,377,000 2,192,000 2,075,000
+International MWh 657,000 585,000 477,000 389,000 351,000
+Fuel
+Total MWh 662,950 334,250 467,280 439,170 462,680
+Natural gas MWh 312,490 188,630 203,010 202,360 202,340
+Biogas MWh 218,780 76,280 208,620 210,820 217,140
+Propane liquid MWh 1,030 1,830 40 140 280
+Gasoline MWh 50,760 38,790 34,880 14,910 23,950
+Diesel (other) MWh 57,030 15,610 9,780 9,610 16,450
+Diesel (mobile combustion) MWh 22,860 13,120 10,950 1,330 2,520
+Other
+Steam, heating, and cooling1 MWh 45,370 19,800 22,480 0 0
+Energy efficiency Corporate facilities2
+Electricity savings MWh/year 298,500 290,220 223,940 215,260 118,830
+Fuel savings MMBtu/year 126,540 116,190 110,330 136,820 162,280
+Supplier facilities3
+Electricity savings MWh/year 2,040,000,000 1,620,425,230 1,418,825,350 1,101,440 943,890
+Fuel savings MMBtu/year 2,281,060 2,038,930 1,047,440 752,680 25,120",0.5,0.9999999999999458
+Are there any online resources for sustainable living in India?,"['We’ve offered several learning programs in India that \ncover sustainability basics, the roadmap for achieving \nzero waste, and best practices\xa0in waste management. \nThese include supplier classroom sessions in \nBangalore and Chennai focused on leadership \ncapabilities and training to help scale the Zero Waste \nProgram, as well as community e-learning resources \nto introduce sustainable living, domestic composting, \nand basic waste management beyond the workplace \nthat can benefit  everyone. 2024  Environmental Progress Report  55 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives\nApple 2030\nResources\nSmarter Chemistry FEATURE\nGreen buildings\xa0\nWhether we’re constructing a \ndata center or corporate office or \nrestoring a historic site to house a', 'in India. Supported by our Supplier Employee \nDevelopment Fund, we’ve been able to design \na series of zero-waste-related trainings specific \nto India for supplier leadership, employees, and \nmembers of local  communities.\nWe’ve offered several learning programs in India that \ncover sustainability basics, the roadmap for achieving \nzero waste, and best practices\xa0in waste management. \nThese include supplier classroom sessions in \nBangalore and Chennai focused on leadership \ncapabilities and training to help scale the Zero Waste \nProgram, as well as community e-learning resources \nto introduce sustainable living, domestic composting, \nand basic waste management beyond the workplace \nthat can benefit  everyone. 2024  Environmental Progress Report  55 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives', 'local partners to support access to safe water, \nsanitation, and hygiene. In 2023, the grant \nsupported the expansion of the organization’s \nprogramming from focusing on Bangalore to also \ninclude Chennai. This involved implementing \nthe Decision Support System and stakeholder \nengagement mapping tools, designed with our \nsupport, in a new critical region of India.2024  Environmental Progress Report  51 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives\nApple 2030\nResources\nSmarter Chemistry Zero waste\nWe’re committed to eliminating \nwaste sent to landfill —\xa0and the \nenvironmental costs that come with \nit. At our offices, retail locations, \ndata centers, and construction \nsites, we’re implementing systems', 'the Decision Support System and stakeholder \nengagement mapping tools, designed with our \nsupport, in a new critical region of India.2024  Environmental Progress Report  51 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives\nApple 2030\nResources\nSmarter Chemistry Zero waste\nWe’re committed to eliminating \nwaste sent to landfill —\xa0and the \nenvironmental costs that come with \nit. At our offices, retail locations, \ndata centers, and construction \nsites, we’re implementing systems \nand adopting approaches to avoid \nsending waste to landfill, and \nwe ask the manufacturers in our \nsupply chain to do the same. Our \nfocus is on innovative approaches \nto eliminating waste generated \nduring manufacturing and engaging', 'We continue to focus on energy efficiency  \nin our operations and bringing new renewable \nelectricity projects online worldwide. In the \nlong term, we believe that these projects']","Yes, according to the provided context, there are community e-learning resources available in India that introduce sustainable living, domestic composting, and basic waste management beyond the workplace. These resources are part of the learning programs offered by Apple in India to promote sustainable living and waste management practices.","in India. Supported by our Supplier Employee 
+Development Fund, we’ve been able to design 
+a series of zero-waste-related trainings specific 
+to India for supplier leadership, employees, and 
+members of local  communities.
+We’ve offered several learning programs in India that 
+cover sustainability basics, the roadmap for achieving 
+zero waste, and best practices in waste management. 
+These include supplier classroom sessions in 
+Bangalore and Chennai focused on leadership 
+capabilities and training to help scale the Zero Waste 
+Program, as well as community e-learning resources 
+to introduce sustainable living, domestic composting, 
+and basic waste management beyond the workplace 
+that can benefit  everyone. 2024  Environmental Progress Report  55 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives
+Apple 2030
+Resources
+Smarter Chemistry FEATURE
+Green buildings 
+Whether we’re constructing a 
+data center or corporate office or 
+restoring a historic site to house a 
+retail store, we have an opportunity 
+to advance our vision of the world 
+we’d like to live in — one that’s 
+inclusive and accessible, reflects 
+the value we place on creativity 
+and innovation, and furthers our 
+environmental  goals.
+Our environmental approach to design and 
+construction adheres to industry-recognized best 
+practices for green buildings that promote renewable 
+energy, water conservation, energy efficiency, and 
+responsible material sourcing. As of 2023, 108 of our 
+corporate offices, data centers, retail stores across 
+the world, totaling more than 18 m illion square feet 
+of green building space, are Leadership in Energy 
+and Environmental Design (LEED) or Building 
+Research Establishment Environmental Assessment 
+Method ( BREEAM)  certified.Our global footprint requires that we adapt to the 
+needs of different locations and climates while 
+pursuing our overall objectives. In 2023, two 
+Apple sites in Israel and Spain earned LEED Gold 
+certification and one location achieved Platinum 
+certification — our first in Southern California 
+to do so. A building on our Culver City campus 
+demonstrated reductions of more than  45 percent  
+reduction in indoor water use and more than 
+15 percent  in energy use. For construction and 
+demolition waste, the site diverted more than 
+75 percent  of materials. The location was also 
+recognized for its ease of commuting, including its 
+proximity to seven public transit lines, the availability 
+of bike racks and showers for employees who cycle 
+to work.
+We bring a similar environmental approach to 
+our retail store development. In Mumbai, India, 
+we opened Apple BKC — our first retail location 
+in the nation — which earned LEED Platinum 
+certification. The store’s energy-efficient design, 
+use of natural light, and onsite photovoltaic panels 
+helped achieve energy savings of more than 
+40 percent , and its low-flow fixtures and onsite gray water recycling reduced water consumption 
+by more than 84 percent . The site also diverted 
+95 percent  of the construction waste from landfill 
+while using sustainably harvested wood for the 
+ceiling, furniture, and fixtures. The success of 
+these efforts resulted from a strong partnership 
+with our local landlord partner who shared our 
+values and priorities, ensuring that our collective 
+environmental objectives were  achieved.
+Our new Apple Battersea retail location in the 
+historic Battersea Power Station in London 
+is trending to achieve a BREEAM Very Good rating.",1.0,0.7466786127363884
+How does the company ensure its sustainability efforts align with environmental performance standards?,"['The assurance team has extensive experience in conducting verification and assurance  over \nenvironmental, social, ethical and health and safety information, systems and processes , has over 30 \nyears combined experience in this field and an excellent understanding of Apex standard methodology \nfor the Assurance of Sustainability Reports .  \nAttestation:  \n        \nTrevor Donaghu, Lead Verifier  David Reilly , Technical Reviewer  \nESG Director, National Practice Lead  ESG Principal Consultant  \nApex Companies, LLC  Apex Companies, LLC  \n \nMarch 8 , 202 4 \n2024  Environmental Progress Report  103 Engagement and Advocacy Environmental Initiatives Data Introduction Contents AppendixAppendix C\nSupplier Energy \nEfficiency Program \n(Apex) \nApex Companies, LLC  \n Page 1  of 2', 'years combined experience in this field and an excellent understanding of Apex standard methodology \nfor the Assurance of Sustainability Reports .  \n \nAttestation:  \n        \nTrevor Donaghu, Lead Verifier  Mary E. Armstrong -Friberg , Technical Reviewer  \nESG Director, National Practice Lead  ESG Program Manager  \nApex Companies, LLC  Apex Companies , LLC \n \nApril 11 , 202 4 \n \n2024  Environmental Progress Report  99 Engagement and Advocacy Environmental Initiatives Data Introduction Contents AppendixAppendix C\nProduct carbon \nfootprint \n(Fraunhofer \nInstitute)\n \n \n\uf0a7 \n\uf0a7 \n\uf0a7', 'standard methodology for the Assurance of Sustainability Reports .  \nAttestation:  \n        \nTrevor Donaghu, Lead Verifier                                Scott Johnston , Technical Reviewer  \nESG Director, National Practice Lead    ESG Principal Consultant  \nApex Companies, LLC.      Apex Companies, LLC.          \n \nJanuary 30, 202 4 \n \n2024  Environmental Progress Report  104 Engagement and Advocacy Environmental Initiatives Data Introduction Contents AppendixAppendix C\nPackaging \nfiber and \nplastic \nfootprint  \n(Fraunhofer \nInstitute) \n \n \n \n \n \n  \n Corporate  Packaging Fiber and Plastic  Footprint  \nReview  \nClient: Apple Inc. 1 Review Statement', 'serving on the Board of Directors and steering committee of the Responsible Minerals Initiative)\nWorld Business Council for Sustainable Development (WBCSD) A global community of leading businesses driving systems transformation for a better world in which \nmore than 9 billion people can live well, within planetary boundaries, by mid-century (Member)2024  Environmental Progress Report  70 Environmental Initiatives Data Appendix Introduction Contents Engagement and AdvocacyWe support climate and \nenvironmental policy  through  \nour actions and  stakeholder  \nengagement. \nIn 2023\xa0we publicly supported California’s Climate \nCorporate Data Accountability Act (CA SB  253),  \nwhich requires\xa0large businesses to publicly disclose \ntheir greenhouse gas emissions. We also filed \ncomments supporting the U.S. Environmental', 'to comply with new environmental regulations and \nwith policymakers on future  standards. \nWe listen to a diverse set of stakeholders to learn how to improve our approaches to environmental stewardship.\n2024  Environmental Progress Report  68 Environmental Initiatives Data Appendix Introduction Contents Engagement and AdvocacyAchieving change together\nAs industry leaders, we have  \na responsibility to influence \nchange\xa0— through  advocating  \nfor policy and directly  engaging  \nwith our stakeholders. We \nparticipate in collective  action  \nas the best means to  address  \nurgent environmental issues. \nProactively sharing our experiences \nand contributing to collaborative \nefforts in our areas of focus \nand expertise help us better \nrealize\xa0environmental goals  that  \nwe share with\xa0 our stakeholders.Supply  chain']","Based on the provided context, it appears that the company, Apple Inc., ensures its sustainability efforts align with environmental performance standards through the following means:
+
+1. **Publicly supporting climate and environmental policy**: Apple publicly supports climate and environmental policy through its actions and stakeholder engagement. For example, it supported California's Climate Corporate Data Accountability Act (CA SB 253) and filed comments supporting the U.S. Environmental Protection Agency's (EPA) future standards.
+2. **Engaging with stakeholders**: Apple listens to a diverse set of stakeholders to learn how to improve its approaches to environmental stewardship. This suggests that the company values stakeholder input and feedback in shaping its sustainability efforts.
+3. **Participating in collective action**: Apple participates in collective action as the best means to address urgent environmental issues. This implies that the company recognizes the importance of collaboration and collective action in achieving environmental goals.
+4. **Proactively sharing experiences and contributing to collaborative efforts**: Apple proactively shares its experiences and contributes to collaborative efforts in its areas of focus and expertise. This helps the company better realize environmental goals that it shares with its stakeholders.
+5. **Compliance with new environmental regulations**: Apple ensures that it complies with new environmental regulations, which suggests that the company is committed to meeting or exceeding environmental performance standards.
+
+Overall, Apple Inc. appears to be committed to ensuring its sustainability efforts align with environmental performance standards through a combination of stakeholder engagement, collective action, and proactive sharing of experiences.","in a 99 percent  rate of diversion for construction 
+waste. The retail store project uses our newest 
+and most sustainable design language and 
+materials, which heavily focuses on low-carbon 
+design elements including a biopolymer terrazzo 
+floor, sustainably harvested wood, reduced steel 
+tonnage, and an acoustic baffle  ceiling.
+Each Apple building needs to coexist with its 
+environment while meeting our standards for 
+human-centric design. We work hard to strike this 
+balance and harness the creativity and innovation 
+that these challenges  demand.108
+As of 2023, 108 Apple 
+buildings worldwide 
+are LEED or BREEAM 
+certified for environmental 
+performance.
+Our environmental approach is mindful of energy and resource use. Apple BKC earned LEED 
+Platinum certification.
+2024  Environmental Progress Report  56 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives
+Apple 2030
+Resources
+Smarter Chemistry Smarter 
+Che mistryDisplaying smarter thinking
+iPhone 15 models use 
+arsenic-free glass and  
+are also free from mercury,   
+brominated flame  
+retardants, and PVC .2024  Environmental Progress Report  57 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives
+Apple 2030
+Resources
+Smarter Chemistry 
+Approach
+Mapping
+Assessment
+InnovationApproach
+Smarter Chemistry
+We identify and use the chemicals 
+and materials that best serve our 
+priorities of safety, performance, 
+and the environment. This approach 
+is the foundation of smarter 
+chemistry — and it underpins our 
+efforts across our supply chain.
+Smarter chemistry is our approach to proactively 
+promoting the use of safer materials and chemicals. 
+We identify chemicals that balance our priorities — 
+including safety and performance — minimizing our 
+environmental impact. The program supports the steps 
+we’re taking toward a circular supply chain by reducing 
+the recirculation of potentially harmful substances, 
+and it contributes to a healthier workplace for our 
+manufacturers and suppliers.
+We focus on limiting chemical exposure through the 
+commonly used hierarchy of controls. The concept 
+consists of five actions that organizations can take 
+with materials: 
+• Elimination
+• Substitution
+• Engineering controls
+• Administrative controls
+• Personal protective equipment (PPE).We prioritize elimination and substitution, and 
+when no alternative is available to eliminate or 
+substitute potential exposure, we rely on engineering 
+and administrative controls to safeguard against 
+hazard exposure.
+Our program involves establishing safety requirements 
+that often exceed local industry standards and 
+supporting our suppliers. We’ve created standards 
+and programs to support these efforts, including 
+the rigorous requirements defined in our Regulated 
+Substances Specification (RSS ) and the deep supply 
+chain engagement through our Full Material Disclosure 
+(FMD) and Chemical Safety Disclosure (CSD) 
+programs. 
+Maintaining comprehensive information on the 
+chemicals and materials we use is essential. It helps us 
+better protect the people who design, make, use, and 
+recycle our devices. This information also informs our 
+efforts to protect the environment and work alongside 
+leading members of the scientific community, NGOs, 
+and industry organizations to push for the development 
+and broad adoption of safer alternatives. We also 
+share what we’ve learned in creating these systems 
+with others in the industry — and we push for change 
+that can transform product manufacturing. 
+Advocacy and leadership are needed to make this",1.0,0.7707590576605946
+Are there any programs focused on safer materials in their production processes?,"['and supply chain lays the foundation for material \ninnovations. We also look at how these materials \nare used in a product life cycle, from design and \nmanufacturing to end of life. With this knowledge, \nwe can seek out and support the development of \nsafer chemistries, and\xa0we can continually improve \nthe\xa0overall safety of our products and processes.Creating new, safer \nchemistries to move the \nindustry  forward\nOur strict requirements that govern potentially \nharmful substances in our products and processes \nencourage our manufacturing partners to also \nprioritize safer materials, helping create a market \nfor better alternatives. We’re lending our expertise \non safer chemistries to support our suppliers as \nthey meet the growing demand for safer materials.', 'they meet the growing demand for safer materials. \nPrioritizing these materials also means phasing out \nchemistries that don’t meet our specifications. We’ve \napproached this across our company and products \nwhile investing in safer alternatives to drive change \nacross our industry. The use of\xa0safer cleaners today \nsupports the circular supply chains of the future.\nUsing our research and analysis of materials, \nwe’ve collaborated with suppliers to create safer \nalternatives — including for substances where none \ncurrently exist. In those cases, we lend our technical \ncapabilities in material science to work with suppliers \nto develop entirely new chemistries. We maintain the \nsame high safety, performance, and environmental \nstandards for new alternative materials, submitting', 'the chemical safety, performance, \nand environmental  impact  \nof materials by expanding our \nknowledge of material properties. \nOur assessments of substances \nfocus on those three  areas  \nof improvement and help  us  \npursue innovations that  align  \nwith our  values. \nThe work we do in mapping, assessing, and \nmanaging the chemicals used in our products \nand supply chain lays the foundation for material \ninnovations. We also look at how these materials \nare used in a product life cycle, from design and \nmanufacturing to end of life. With this knowledge, \nwe can seek out and support the development of \nsafer chemistries, and\xa0we can continually improve \nthe\xa0overall safety of our products and processes.Creating new, safer', 'the\xa0overall safety of our products and processes.Creating new, safer \nchemistries to move the \nindustry  forward\nOur strict requirements that govern potentially \nharmful substances in our products and processes \nencourage our manufacturing partners to also \nprioritize safer materials, helping create a market \nfor better alternatives. We’re lending our expertise \non safer chemistries to support our suppliers as \nthey meet the growing demand for safer materials. \nPrioritizing these materials also means phasing out \nchemistries that don’t meet our specifications. We’ve \napproached this across our company and products \nwhile investing in safer alternatives to drive change \nacross our industry. The use of\xa0safer cleaners today \nsupports the circular supply chains of the future.', 'when no alternative is available to eliminate or \nsubstitute potential exposure, we rely on engineering \nand administrative controls to safeguard against \nhazard exposure.\nOur program involves establishing safety requirements \nthat often exceed local industry standards and \nsupporting our suppliers. We’ve created standards \nand programs to support these efforts, including \nthe rigorous requirements defined in our Regulated \nSubstances Specification (RSS ) and the deep supply \nchain engagement through our Full Material Disclosure \n(FMD) and Chemical Safety Disclosure (CSD) \nprograms.\xa0\nMaintaining comprehensive information on the \nchemicals and materials we use is essential. It helps us \nbetter protect the people who design, make, use, and \nrecycle our devices. This information also informs our']","Yes, there are several programs focused on safer materials in their production processes. Some of these programs mentioned in the text include:
+
+1. Full Material Disclosure (FMD) program: This program involves deep supply chain engagement to ensure safer materials are used.
+2. Chemical Safety Disclosure (CSD) program: This program is also mentioned as part of the company's efforts to support suppliers in using safer materials.
+3. Regulated Substances Specification (RSS) program: This program sets rigorous requirements for potentially harmful substances in products and processes.
+
+These programs demonstrate the company's commitment to prioritizing safer materials and driving change across their industry.","including suppliers representing the majority of 
+Apple’s direct spend. And through this program, 
+we’ve identified more than 17,000 unique materials 
+and chemicals used in the manufacturing process. 
+All these efforts contribute to a safer work 
+environment for people across our supply  chain.COMPREHENSIVE CHEMICAL MAPPING FOR SAFER PRODUCTS
+We account for how chemicals are selected 
+and managed within our supply chain
+An understanding of chemical 
+ingredients leads to better 
+materials for Apple products
+Through the FMD program, Apple 
+manufacturing partners share the materials 
+they use to manufacture Apple  products.
+Apple works with material manufacturers to 
+understand the chemistries of the materials 
+to enable  evaluation.Data helps Apple suppliers 
+manage chemicals and materials 
+when making Apple products
+Through our CSD program, suppliers share 
+information with Apple about how they use 
+chemicals, store the chemicals, and protect 
+their  employees.
+CSD data informs and prioritizes supplier 
+engagement, encouraging rigorous chemical 
+management practices and adoption of 
+safer  alternatives.Apple customers benefit from 
+using products made with safer 
+materials and chemicals
+The FMD and CSD programs support the 
+creation of quality products in a responsible 
+manner for our customers.2024  Environmental Progress Report  60 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives
+Apple 2030
+Resources
+Smarter Chemistry Assessment
+Setting and maintaining 
+rigorous chemical 
+safety  requirements
+We first published the  Regulated Substances 
+Specification  over 20 years ago, establishing 
+requirements for the use of chemicals or materials in 
+our products, accessories, manufacturing processes, 
+and packaging. The specification builds on our 
+history of advancements in material safety — and it 
+reflects our dedication to the collection of necessary 
+data to uphold these  requirements.
+We continue to evolve the RSS with new chemicals 
+and restrictions based on the latest scientific 
+research and standards, drawing from regulations, 
+international standards, and voluntary requirements. 
+Many of the specification’s restrictions exceed 
+the most stringent local regulatory requirements 
+in order to protect workers health and the 
+environment. The specification designates restricted 
+substances and requires reporting on additional 
+substances. We’ve updated and expanded chemical 
+restrictions that, in many instances, surpass current 
+regulatory restrictions. Most recently, we’ve added 
+perfluorohexanesulfonic acid (PFHxA) — a subset of 
+the larger group of PFAS — phenol, isopropylated, 
+phosphate (3:1) (PIP 3:1), and several skin-sensitizing 
+substances well ahead of regulatory  restrictions.Our Green Chemistry Advisory Board provides 
+feedback on key initiatives, including potential 
+updates to the RSS. The advisory board is an 
+independent group of leading researchers 
+and academics. Their diverse experience and 
+perspectives help us lead the way in protecting 
+our customers and those who make or recycle 
+our products.
+We apply controls to materials that come into 
+prolonged skin contact (as defined in our Restricted 
+Chemicals for Prolonged Skin Contact Materials  
+list). The restrictions focus on substances that are 
+potential skin sensitizers to minimize the potential 
+for reactions commonly reported across wearable 
+products, like jewelry. We derive these restrictions 
+from leading standards, recommendations from 
+toxicologists and dermatologists, international laws 
+and directives, and Apple policies. We mandate 
+that our suppliers analyze each material that comes",1.0,0.9387919667328832
+What steps are taken to ensure data accuracy concerning packaging materials?,"['about our material specifications, track and assess \nthe materials they use, and regularly communicate \nmaterial usage. This also helps our suppliers', 'based  packaging.13  In 2022, we expanded our packaging goal boundary to better reflect \nour impact, resulting in an increase of about 36 percent  of our total \npackaging mass, relative to fiscal year 2021. We include retail bags, \nall finished goods boxes (including plastic content in labels and \nin-box documentation), packaging sent to our customers as part of \nApple Trade In, AppleCare packaging for whole units and service \nmodules (with the exception of plastics needed to protect items \nfrom electrostatic discharge), and secondary packaging of Apple \nproducts and accessories sold by Apple. Our goal boundary does \nnot include the inks, coatings, or adhesives used in our packaging. \nIn addition to our packaging footprint, we also calculate the fiber', '\uf0a7 Selected p roduct and supplier specific data on packaging materials and production \nyields   \n\uf0a7 Aggregated packaging fiber and plastic  data for all pr oducts  and t he total \ncorporate  packaging  fiber and  plastic  footprint for the fiscal year 2023 \nThe methodology paper provided by Apple ( Packaging Plastic Footprint at Apple  – \nMethodology Description  – V1.0 in 2018, Fiber Footprint at Apple - Methodology \nDescription -  V1.1 reviewed in 2017 ), is considered a sound and appropriate guidance for \ndetermining the company packaging fiber and plastic . Where appropriate, this approach \nfollows methodological principles applied for state -of-the-art Life Cycle Assessment s.  \nThis review comprises a check of packaging fiber and plastic data for selected products  \n(Apple watch , iPad, Mac).', 'in packaging. Apple  obtain s and analyses  supplier -specific data for each product line and \nsums up these figures for the entire  company using sell -in numbers.  For some products, a \nrepresentative supplier is chos en to calculate the product -specifc packaging. The output is a \ntotal packag ing fiber and plastic  footprint.  For labels, beats products and accessories, \nindividual sell -in numbers were only availabe for a share of product s. These were  \nextrapolated for the w hole category. ESD packages (within Apple care) are excluded from \nthe packaging plastic footprint.   \nThe review of the corporate annual packaging fiber and plastic  footprint has considered the \nfollowing criteria:  \n\uf0a7 The system boundaries are clearly defined  \n\uf0a7 Assumptions and estimations made are app ropriate', 'Apple 2030\nResources\nSmarter Chemistry Apple’s packaging design guidelines factor in \npackaging recyclability, requiring the use of fiber-\nbased materials that can break down to pulp as \npart of mixed-paper recycling streams, alongside \nmaterials like cereal boxes.54\xa0We test our packaging \nto standards developed by independent industry and \nresearch organizations — including Western Michigan \nUniversity, the U.S. Forest Service’s Forest Products \nLaboratory, and the Confederation of European Paper \nIndustries — and we continue to monitor evolving \ninternational packaging  standards.\nOur fall Apple Watch lineup packaging is 100 percent fiber-based, a milestone toward our commitment to have plastic-free packaging by 2025.\n100%']","To ensure data accuracy concerning packaging materials, Apple takes the following steps:
+
+1. **Obtains and analyzes supplier-specific data**: Apple collects data from suppliers for each product line and aggregates these figures for the entire company using sell-in numbers.
+2. **Selects representative suppliers**: For some products, a representative supplier is chosen to calculate product-specific packaging data.
+3. **Extrapolates data for incomplete categories**: For labels, Beats products, and accessories, individual sell-in numbers were only available for a share of products. These were extrapolated for the whole category.
+4. **Excludes certain packaging types**: ESD (electrostatic discharge) packages within Apple Care are excluded from the packaging plastic footprint.
+5. **Reviews and checks data against established criteria**: The corporate annual packaging fiber and plastic footprint is reviewed against the following criteria:
+	* Clearly defined system boundaries
+	* Appropriate assumptions and estimations made
+
+By taking these steps, Apple ensures that its packaging material data is accurate and reliable, which is essential for tracking and assessing its packaging materials and communicating material usage to suppliers."," Selected p roduct and supplier specific data on packaging materials and production 
+yields   
+ Aggregated packaging fiber and plastic  data for all pr oducts  and t he total 
+corporate  packaging  fiber and  plastic  footprint for the fiscal year 2023 
+The methodology paper provided by Apple ( Packaging Plastic Footprint at Apple  – 
+Methodology Description  – V1.0 in 2018, Fiber Footprint at Apple - Methodology 
+Description -  V1.1 reviewed in 2017 ), is considered a sound and appropriate guidance for 
+determining the company packaging fiber and plastic . Where appropriate, this approach 
+follows methodological principles applied for state -of-the-art Life Cycle Assessment s.  
+This review comprises a check of packaging fiber and plastic data for selected products  
+(Apple watch , iPad, Mac).  
+Plausibility of some data has been questioned and discussed with Apple in detail.  More 
+granular data for accessories is recommended  in the future.  
+This review was done remotely.  All questions raised in the course of the review were 
+answered by Apple and related explanation  was provided where neede d.   2024  Environmental Progress Report  105 Engagement and Advocacy Environmental Initiatives Data Introduction Contents Appendix 
+ 
+ 
+ 
+ 
+ 
+  
+ Corporate  Packaging Fiber and Plastic  Footprint  
+Review  
+Client: Apple Inc. 3 Based on the process and procedures conducted, there is no evidence that the corporate 
+packaging fiber and plastic  footprint  is not materially correct and is not a fair 
+representation of fiber and plastic  data and information .  
+ 
+Berlin, March 11 , 2024 
+  
+  
+- Marina Proske  -  - Karsten Schischke - 
+Fraunhofer IZM   Fraunhof er IZM  
+Dept. Environmental and Dept. Environmental and  
+Reliability Engineering   Reliability Engineering  
+ 
+ 
+ 
+   2024  Environmental Progress Report  106 Engagement and Advocacy Environmental Initiatives Data Introduction Contents AppendixAppendix D2024  Environmental Progress Report  107 Engagement and Advocacy Environmental Initiatives Data Introduction Contents Appendix
+A: Corporate facilities energy supplement
+B: Apple’s life cycle assessment methodology
+C: Assurance and review statements
+D: Environment, Health and Safety Policy
+E: ISO 14001 certification
+Report notes
+End notesAppendix D
+Environment, Health and Safety Policy
+Mission Statement
+Apple Inc. is committed to protecting the 
+environment, health and safety (EHS) of our 
+employees, contractors, and customers in the design, 
+research, manufacture, distribution, and use of our 
+products and services in global communities where 
+we operate.
+We recognize that by integrating best EHS 
+management practices into all aspects of our 
+business, we can offer technologically innovative 
+products and services while conserving and 
+enhancing resources for future  generations.
+Apple strives for continuous improvement in our 
+EHS management systems and in the environmental 
+quality of our products, processes, and services.Guiding Principles
+Meet or exceed all applicable EHS  requirements.
+Where laws and regulations do not provide adequate 
+controls, apply higher standards to protect human 
+health and the environment.
+Design, manage, and operate our facilities safely; 
+conserve energy, water, and resources; promote 
+renewable energy, and protect  biodiversity.
+Encourage contractors, vendors, and suppliers to 
+provide safe working conditions, treat workers with 
+dignity and respect, and act fairly and ethically.
+Support and promote best scientific principles,",0.8,0.8556221850051347
+What are some key features of renewable energy solutions used by businesses?,[],"Some key features of renewable energy solutions used by businesses include:
+
+1. **Solar Power**: Many businesses are adopting solar power as a clean and cost-effective source of energy. Solar panels can be installed on rooftops or in parking lots, providing a significant portion of a company's energy needs.
+
+2. **Wind Power**: Wind turbines can be installed on-site or off-site, providing a reliable source of renewable energy. Businesses can also purchase wind power from nearby wind farms.
+
+3. **Geothermal Energy**: Geothermal energy harnesses heat from the Earth to generate electricity. This is particularly useful for businesses in areas with significant geothermal activity.
+
+4. **Hydroelectric Power**: Hydroelectric power plants generate electricity by harnessing the energy of moving water. Businesses can invest in hydroelectric power or purchase it from nearby dams.
+
+5. **Energy Storage Systems**: Energy storage systems, such as batteries, help businesses store excess energy generated from renewable sources for later use, reducing reliance on the grid.
+
+6. **Green Tariffs**: Many businesses are taking advantage of green tariffs, which allow them to purchase renewable energy from their utility company at a fixed rate.
+
+7. **On-Site Generation**: On-site generation involves installing renewable energy systems, such as solar or wind power, directly on the business premises.
+
+8. **Power Purchase Agreements (PPAs)**: PPAs enable businesses to purchase renewable energy from a third-party provider at a fixed rate, often with a long-term contract.
+
+9. **Renewable Energy Certificates (RECs)**: RECs represent the environmental attributes of renewable energy, allowing businesses to offset their energy consumption with renewable energy credits.
+
+10. **Energy Efficiency Measures**: Businesses are also incorporating energy efficiency measures, such as LED lighting and energy-efficient equipment, to reduce their overall energy consumption.
+
+These features help businesses reduce their carbon footprint, lower energy costs, and improve their brand reputation by adopting renewable energy solutions.","over time to create the most positive  impact.2011  
+Ownership and PURPA:  Apple’s 100 percent  equity 
+ownership of our Maiden solar arrays was the first 
+time a nonenergy commercial company built its own 
+utility-scale solar PV project. We used a 1978 federal 
+law called the Public Utility Regulatory Policies Act 
+(PURPA) to structure the project. We then applied 
+this same structure to two more large solar PV and 
+biogas fuel cell projects in North Carolina and two 
+microhydro projects in Oregon. This was a landmark 
+moment in corporate renewable energy development 
+and led to an increased use of PURPA in these  states.
+2012  
+Direct Access:  In California and Oregon, we’ve 
+used a program called Direct Access to bypass the 
+default electricity generation offered by the utilities 
+servicing our data centers in those states. Instead, 
+we contracted directly with independent power 
+producers and electricity service providers who 
+could supply 100 percent  renewable electricity. After 
+initially buying from existing, third-party-owned 
+projects, we’re now procuring renewable energy from 
+projects we created: The Solar Star II and Montague 
+Wind projects deliver renewables to our Oregon data 
+center, and the California Flats solar project delivers 
+renewables to our data centers, offices, and retail 
+stores in California.2013  
+GreenEnergy Rider:  We opened a new data center 
+in Reno, Nevada. With no PURPA or Direct Access 
+options in Nevada, we worked directly with the local 
+utility, NV Energy, to create a whole new regulatory 
+structure. The Nevada GreenEnergy Rider enables 
+us to secure a long-term, fixed-price contract for 
+renewable electricity from a new solar PV project 
+built for us but managed by the utility. We’ve used 
+this partnership to create four solar projects totaling 
+320 megawatts.
+2014  
+Equity investment:  We invested in two 20-megawatt 
+solar PV projects in Sichuan, China, to support 
+all our in-country retail stores, corporate offices, 
+and data storage facilities. This project represented 
+the first time a commercial company created a new 
+large-scale project in China for its own use. We’ve 
+since replicated this model many times for Apple’s 
+supply  chain.2015 & 2016  
+Portfolio solutions:  We adapted to land scarcity 
+constraints in Singapore and Japan by contracting 
+for solar PV on 800 rooftops in Singapore and 300 
+in Japan. We adapted our approach in each country 
+to fit local partnerships and regulatory structures: 
+We signed a long-term agreement similar to a power 
+purchase agreement in Singapore and made an 
+equity investment in Japan. These projects offer us 
+long-term flexibility as our load  grows.
+2017  
+Renewable microgrid:  We’ve been powering Apple 
+Park with 100 percent  renewable energy — more 
+than 50 percent  of which is generated onsite and 
+managed by a microgrid. The onsite generation 
+comes from 14 m egawatts of rooftop solar PV and 
+4 megawatts of baseload biogas fuel cells. Any 
+additional energy required is drawn by Direct Access 
+from the California Flats solar project in nearby 
+Monterey County. The microgrid system with battery 
+storage manages the renewable energy generation 
+and the building’s energy use; optimizes demand 
+management, load shifting, and frequency regulation 
+services; and ensures uninterrupted energy reliability",0.8571428571428571,0.9999999999999396
+What happens to the quality of recycled materials due to recycling processes?,"['Traceability\nInformation about the source of  materials  \n— whether mined, recycled, or  renewable  \n— might not be readily  available. Technical properties\nThe properties of a certain recycled or renewable \nmaterials may differ from the primary  material.  \nThis needs to be accounted for during product \ndesign and manufacturing. For example, select \nrecycled plastics differ in properties from other \nplastics. The composition of other recycled materials \ncan also be impacted by some level of contamination \nduring the recycling  process.\nAvailability and access\nThe supply of recycled and renewable  materials  \ncan be constrained by the limited  availability  \nof recoverable material or production of renewable \ncontent. When supply exists in some locations \naround the world, new suppliers need to be', 'recycled plastics differ in properties from other \nplastics. The composition of other recycled materials \ncan also be impacted by some level of contamination \nduring the recycling  process.\nAvailability and access\nThe supply of recycled and renewable  materials  \ncan be constrained by the limited  availability  \nof recoverable material or production of renewable \ncontent. When supply exists in some locations \naround the world, new suppliers need to be \nincorporated into supply chains for the material \nto\xa0be accessed.Scale\nMaterials for a single component can come \nfrom hundreds of different suppliers, requiring \nexponentially more effort as we scale the use \nof high-quality recycled or renewable materials \nacross components and products.\nRegulatory barriers', 'We also conserve resources by working to eliminate \nwaste. \xa0We work to reuse and recycle across our \noperations and throughout our supply chain. We \naim to\xa0eliminate waste where we and our suppliers \noperate.\xa0 These efforts include reducing the overall \namount of waste that we generate, innovating reuse \napproaches, and creating new recycling opportunities \nwith local businesses.Areas of impact\nMaterial recovery\nImproving how we collect end-of-life products and \ndeveloping recycling innovations so that we and others \ncan use old devices as raw material sources for the future.Product longevity\nDesigning durable hardware, using software updates \nto extend functionality, providing convenient access \nto safe and high-quality repair services, and directing', 'Material Specification sets requirements based on \ninternational standards for recycled content and \nresponsible resource management. By requiring \ncertification to these standards, we’re able to confirm \nthat a material has been recycled or comes  from  \na renewable source — one that can continually \nproduce without depleting the earth’s natural \nresources. We approach materials from new sources \nwith the same rigor, evaluating each one for the \nsafety of the materials’ chemistry. This process allows us to scale our use of materials that are better for \nthe environment and safer for use in our products. \nRecycled material is certified by third parties to a \nrecycled content standard that conforms with ISO \n14021. Total recycled content numbers also include \nsupplier reported recycled content checked  by', 'use. More information on our product \nenergy use is provided in our Product \nEnvironmental  Reports.To model end of life\nWe use material composition data \non our products and estimate the \nratio of products that are sent to \nrecycling or disposal. For products \nsent to recycling, we capture the \ninitial processing by the recycler to \nprepare the product for recovery \nof electronic, metal, plastic, and \nglass material streams. Subsequent \ndownstream recycling processes are \nnot included, as these are considered \nstages of production and not end-of-\nlife processing. For products sent to \ndisposal, we capture the emissions \nassociated with landfilling or']","According to the provided context, the quality of recycled materials can be impacted by some level of contamination during the recycling process. This means that the composition of other recycled materials can be affected, resulting in differences in properties compared to primary materials. For example, select recycled plastics may differ in properties from other plastics.","a collective response. Through collaboration within 
+the material space, we can achieve impact felt 
+beyond our business. The supply chains we’re 
+helping create serve more than just our product 
+needs — they help promote the  availability  
+of competitively priced, quality recycled and 
+renewable materials across  geographies.Key challenges to developing 
+circular supply chains
+Traceability
+Information about the source of  materials  
+— whether mined, recycled, or  renewable  
+— might not be readily  available. Technical properties
+The properties of a certain recycled or renewable 
+materials may differ from the primary  material.  
+This needs to be accounted for during product 
+design and manufacturing. For example, select 
+recycled plastics differ in properties from other 
+plastics. The composition of other recycled materials 
+can also be impacted by some level of contamination 
+during the recycling  process.
+Availability and access
+The supply of recycled and renewable  materials  
+can be constrained by the limited  availability  
+of recoverable material or production of renewable 
+content. When supply exists in some locations 
+around the world, new suppliers need to be 
+incorporated into supply chains for the material 
+to be accessed.Scale
+Materials for a single component can come 
+from hundreds of different suppliers, requiring 
+exponentially more effort as we scale the use 
+of high-quality recycled or renewable materials 
+across components and products.
+Regulatory barriers
+Transboundary movement regulations — created 
+to establish critically important community 
+and environmental protections — can have the 
+unintended consequence of inhibiting material 
+recovery and movement to recyclers or  refiners  
+for use in new products. To learn about our support 
+of policies that enable circular supply chains while 
+improving social and environmental protections, 
+read the Policy advocacy  feature .2024  Environmental Progress Report  17 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives
+Apple 2030
+Resources
+Smarter Chemistry Aluminum
+Regulatory barriers  
+Technical properties  
+Scale• In 2023, 71 percent of the aluminum in products we shipped to customers came from recycled sources — up from 67 percent 
+in 2022.33
+• Because recycled aluminum can have 1/40 the carbon footprint of aluminum from primary sources, this supports our pursuit  
+of low-carbon design.34 Learn more about ELYSIS aluminum, which was smelted without generating greenhouse gas emissions 
+(see  page 33 ).
+• In 2023, 52 percent of the cobalt shipped in our products — more than double the amount shipped in 2022 — came from certified 
+recycled sources on a mass balance basis, including post-industrial scrap and post-consumer scrap from end-of-life batteries.
+• In 2023, we used 100 percent recycled cobalt in the magnets within the magnetic power module of the 15-inch MacBook Air with 
+M2 chip.
+• In 2023, Apple committed to using 100 percent recycled cobalt in all Apple-designed batteries by 2025.35Material and key challenges Progress
+Copper
+Technical properties  
+Supply chains  
+Scale• In 2023, we introduced 100 percent recycled copper in the fin stack of the heat sink for 16-inch MacBook Pro, which helps regulate 
+thermal performance. For iPhone, we introduced 100 percent recycled copper foil in the MagSafe inductive charger, and we’re 
+exploring how to use recycled copper in other thermal applications.
+• In 2023, we introduced 100 percent recycled copper wire in the T aptic Engine in our iPhone 15 lineup, Apple Watch Series 9, and",1.0,0.8769682817015566
+What are some initiatives to minimize waste at manufacturing sites?,"['operations and throughout our supply chain. We \naim to\xa0eliminate waste where we and our suppliers \noperate.\xa0 These efforts include reducing the overall \namount of waste that we generate, innovating reuse \napproaches, and creating new recycling opportunities \nwith local businesses.Areas of impact\nMaterial recovery', 'to eliminating waste generated \nduring manufacturing and engaging \nwith local specialty recyclers and', 'Resources\nSmarter Chemistry Reducing waste at our \ncorporate  facilities\nWe’re reducing the amount of waste generated \nin our corporate operations and directing more \nto recycling programs. In 2023, recycling and \ncomposting efforts allowed us to achieve a waste', 'data centers, and construction \nsites, we’re implementing systems \nand adopting approaches to avoid \nsending waste to landfill, and \nwe ask the manufacturers in our \nsupply chain to do the same. Our \nfocus is on innovative approaches \nto eliminating waste generated \nduring manufacturing and engaging \nwith local specialty recyclers and \ncomposters to redirect materials \nfrom  landfills. Approach 2023 progress\n74%\ndiversion rate\nIn 2023 we achieved a waste \ndiversion rate of 74% for \nthe waste generated in our \ncorporate operations.\n3M\nmetric tons\nAs a result of Apple’s Zero', 'considerable progress. And we’ve expanded this \nprogram to include more than 350 supplier facilities \nacross 13\xa0countries and  regions. \nWe require our suppliers to take part in our Zero \nWaste Program as part of our Supplier Code of \nConduct.\xa0Suppliers must implement a systematic \napproach for identifying all waste sources and \ncharacterizing each stream in the waste inventory, \ndeveloping a program or solution to quantify and \nmonitor their waste-to-landfill diversion rate, setting \nwaste minimization goals, and maintaining progress \ntoward achieving zero waste to landfill. Our Zero \nWaste Program provides training and tools to help \nsuppliers track their waste, set waste minimization \ngoals, and create improvement plans for achieving \nzero waste in their  operations.']","According to the provided context, some initiatives to minimize waste at manufacturing sites include:
+
+1. Reducing the overall amount of waste generated during manufacturing.
+2. Innovating reuse approaches.
+3. Creating new recycling opportunities with local businesses.
+4. Implementing systems to avoid sending waste to landfills.
+5. Engaging with local specialty recyclers and composters to redirect materials from landfills.
+6. Developing a systematic approach for identifying all waste sources and characterizing each stream in the waste inventory.
+7. Developing a program or solution to quantify and monitor waste-to-landfill diversion rate.
+8. Setting waste minimization goals and maintaining progress toward achieving zero waste to landfill.
+
+These initiatives are part of Apple's Zero Waste Program, which aims to eliminate waste generated during manufacturing and engage with local specialty recyclers and composters to redirect materials from landfills.","of landfill space. Throughout 2023, 100 percent  
+of established final assembly sites  maintained  
+zero-waste-to-landfill operations.83 
+And we’re working on the next challenge in 
+achieving zero waste, which is a level deeper into 
+the subassembly module suppliers who assemble 
+the individual components of Apple products. The 
+waste stream at this level is often more complex than 
+at final assembly sites, but we’re making progress. 
+As of  2023, m ore than 300 m odule suppliers have participated in Zero Waste Program since 
+its inception — including those who provide core 
+technology components, displays, PCB and flex, 
+packaging and enclosures. They’ve diverted more 
+than 352, 000 m etric tons of waste from  landfills.
+Pushing toward zero-waste innovation
+We use novel recycling strategies and approaches 
+to divert greater quantities of waste from landfill in 
+our supplier facilities at greater rates. We also pursue 
+material solutions to impact the waste streams 
+coming into these facilities to simplify and maximize 
+the recyclable content that our suppliers work  with.
+Plastics comprise one of the major waste streams 
+in our supply chain. For this reason, we’ve focused 
+our efforts on reducing the amount of plastic waste 
+generated during manufacturing. In 2018, we 
+partnered with a key material vendor to develop 
+components that have helped our suppliers reduce 
+waste. These include recyclable protective films 
+(RPFs) that safeguard products during manufacturing 
+and reusable trays used to securely deliver modules 
+through assembly  sites.
+We’re also working to reduce more complex waste 
+streams, including processing chemical waste 
+found further upstream in our supply chain. One 
+typical process waste is coolant, a chemical material 
+used to cool the surface of machinery involved in 
+manufacturing components like enclosures. To avoid 
+sending coolant waste to landfill or an  incinerator,  
+we launched a series of coolant reduction initiatives 2024  Environmental Progress Report  54 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives
+Apple 2030
+Resources
+Smarter Chemistry in our enclosure supply chain. We focused on 
+reducing coolant usage by implementing minimum 
+quantity lubricant (MQL) technology, an ultraviolet or 
+ozone approach to recycling coolant, and end-of-life 
+recycling. These initiatives have reduced more than 
+20,000 m etric tons of coolant-containing waste in 
+the past  year.
+Engaging with suppliers to reduce waste
+We work closely with our suppliers to realize our 
+zero-waste goals. This work faces a range of 
+challenges, including a lack of access to recycling 
+technologies, the absence of local  infrastructure,  
+ and the lower value of recyclable material that 
+impacts the economics of  recycling. 
+In 2023, we focused on reducing a significant portion 
+of plastics in manufacturing and transportation of 
+our products. With packaging, we’ve already made 
+significant progress in transitioning to fiber-based 
+materials. We’re now working to extend that success 
+to the packaging module components used by our 
+suppliers during transportation and at assembly 
+sites. Our suppliers have developed fiber alternatives 
+to replace plastic films, foams, and bags. The initial 
+pilot, launched in 2022, focused on reducing waste 
+associated with iPad; the program now includes 
+iPhone, Mac, Apple Watch, and AirPods. Since this 
+effort began, our suppliers have saved 3, 600 m etric",0.625,0.9999999999999392
+How are businesses working towards achieving 100 percent renewable energy?,"['the program. These suppliers have committed to \nusing 100 percent  renewable electricity for all their', 'reducing energy use\nUsing 100 percent renewable electricity \nfor our corporate operations\nContinuing to generate and source the \nelectricity for our data centers, retail stores, \nand offices, as we have since January 2018Transitioning our supply chain \nto renewable energy\nMaking progress toward transitioning our \nentire manufacturing supply chain, as well \nas\xa0supporting suppliers in adopting renewable \nenergy technologies and helping drive \nenvironmental action in our suppliers’ regions\nFocusing on product use\nIncreasing our products’ energy efficiency \nto drive down emissions from product use, \nand taking steps to address the emissions \nthat remain\nSeeking renewable sources \nwith positive impact\nPrioritizing energy supply options', 'of that electricity came from renewable sources \nincluding solar, wind, biogas fuel cells, and low-\nimpact hydropower. To cover our needs, we build our \nown renewable power projects and work with utilities \nto purchase clean energy from locally obtained \nresources. We’re staying at 100 percent  even as', 'Our suppliers have successfully  implemented  \na range of energy efficiency projects,  from  \ninstalling light sensors and implementing  free  \ncooling systems to making boiler and  HVAC  \nsystem energy  improvements.1.7M\nWe estimate that \nsuppliers in our Supplier \nEnergy Efficiency \nProgram avoided nearly \n1.7\xa0million\xa0annualized \nmetric tons of supply  \nchain greenhouse gas \nemissions in 2023.\nClean  electricity\nMaintaining 100 percent renewable electricity \nfor\xa0Apple facilities\nOur retail stores, data centers, R&D facilities, and \noffices around the world currently source 100 percent  \nrenewable electricity. We’ve focused our efforts to \nsource renewables around several key  pillars:', 'Managing energy use and \nefficiency potential\nDesigning, operating, and maintaining our \nfacilities to reduce our operational impact, \nand auditing across our operations and supply \nchain to drive efficiency by conserving and \nreducing energy use\nUsing 100 percent renewable electricity \nfor our corporate operations\nContinuing to generate and source the \nelectricity for our data centers, retail stores, \nand offices, as we have since January 2018Transitioning our supply chain \nto renewable energy\nMaking progress toward transitioning our \nentire manufacturing supply chain, as well \nas\xa0supporting suppliers in adopting renewable \nenergy technologies and helping drive \nenvironmental action in our suppliers’ regions\nFocusing on product use']","According to the provided context, businesses are working towards achieving 100 percent renewable energy by:
+
+1. **Transitioning to renewable energy**: They are making progress towards transitioning their entire manufacturing supply chain to renewable energy.
+2. **Supporting suppliers in adopting renewable energy technologies**: They are helping drive environmental action in their suppliers' regions.
+3. **Increasing energy efficiency**: They are implementing energy efficiency projects, such as installing light sensors, implementing free cooling systems, and making boiler and HVAC system energy improvements.
+4. **Sourcing renewables**: They are focusing on sourcing renewables around several key pillars, including:
+	* Managing energy use and efficiency potential.
+	* Designing, operating, and maintaining facilities to reduce operational impact.
+	* Auditing across operations and supply chain to drive efficiency.
+5. **Building their own renewable power projects**: They are building their own renewable power projects to cover their needs.
+6. **Purchasing clean energy from locally obtained resources**: They are working with utilities to purchase clean energy from locally obtained resources.
+
+By implementing these strategies, businesses are working towards achieving 100 percent renewable energy and reducing their greenhouse gas emissions.","other stakeholders. We made our pledge to shift to 
+100 percent  fiber-based packaging by 2025 with 
+the Ellen MacArthur Foundation. And Lisa Jackson, 
+VP, Environment, Policy, and Social Initiatives, was 
+appointed co-chair of America is All In, a coalition in 
+support of climate action in the U.S. Key partnerships and  memberships
+Stakeholder Description (Apple engagement)
+Advanced Energy United Business coalition dedicated to getting 100 percent clean energy in the U.S. (Member)
+Aluminum Stewardship Initiative (ASI) Multistakeholder Standards and Certification organization supporting responsible sourcing within 
+the aluminum value chain; recently completed an audit against their Performance Standard of 
+environmental, social, and governance criteria (Member)
+Asia Clean Energy Coalition (ACEC) Renewable energy buyers, sellers, and financiers dedicated to improving policies for procurement of 
+renewable energy in Asia to rapidly scale up renewable energy projects (Steering group member)
+Ceres Nonprofit dedicated to taking action to stabilize the climate, protect water and natural resources, and 
+build a just and inclusive economy (Member of the Ceres Company Network)
+ChemFORWARD Science-based nonprofit working to advance safer chemistry in product design and manufacturing 
+(Co-design partner and chair of Technical Advisory Group)
+ChemSec Business Group Multinational company forum supporting leadership in progressive chemical policy advocacy and 
+effective corporate practice of sustainable chemical management (Member)
+China Association of Circular Economy (CACE) Organization operating across industries and regions in China sharing our best practices in their 
+conferences and workshops, and partnering with the organization on advocacy efforts focused on 
+recycling and waste (Senior member)
+Clean Electronics Production Network (CEPN) Twenty-member organizations working to improve chemical safety in the electronics supply chain as 
+part of this multistakeholder initiative (Design team member)
+Clean Energy Buyers Association (CEBA) Community of energy buyers promoting customer-driven clean energy use (Board member, serving 
+on the Transmission Advisory Board and the Federal Working Group
+Exponential Roadmap Initiative (ERI) Accredited initiative of the UN Climate Change High-Level Champions’ Race to Zero with the purpose 
+to accelerate exponential climate action and solutions through groundbreaking projects, with the 
+mission to halve emissions before 2030 (Member)
+Japan Climate Leaders’ Partnership (JCLP) Coalition of Japanese companies aligning business objectives with climate goals (Executive member)
+MIT Climate & Sustainability Consortium (MCSC) Academia and industry collaboration galvanizing the business community to have an impact on 
+broad and intersecting environmental challenges (Industry Advisory Board member)
+Platform for Accelerating the Circular Economy (PACE) Public-private collaboration joining global leaders in the transition to a circular economy (Board 
+member)
+RE100 Global corporate renewable energy initiative committing to using 100 percent renewable energy 
+(RE100 Advisory Committee member)
+Responsible Business Alliance (RBA) Industry coalition dedicated to responsible business conduct in global supply chains (Full member, 
+serving on the Board of Directors and steering committee of the Responsible Minerals Initiative)
+World Business Council for Sustainable Development (WBCSD) A global community of leading businesses driving systems transformation for a better world in which 
+more than 9 billion people can live well, within planetary boundaries, by mid-century (Member)2024  Environmental Progress Report  70 Environmental Initiatives Data Appendix Introduction Contents Engagement and AdvocacyWe support climate and 
+environmental policy  through  
+our actions and  stakeholder  
+engagement. 
+In 2023 we publicly supported California’s Climate 
+Corporate Data Accountability Act (CA SB  253),  
+which requires large businesses to publicly disclose 
+their greenhouse gas emissions. We also filed 
+comments supporting the U.S. Environmental",0.25,0.9299273161870324
+Is there a summary of the corporate carbon offsets and their effects?,"['Carbon removals\nCorporate carbon offsets7-471,400 -324,1008-167,0009-70,000100\nProduct life \ncycle\xa0emissions \n(metric\xa0tons\xa0CO 2e)11Gross emissions (Scope 3) 15,570,000 20,280,000 23,020,000 22,260,000 24,460,000\nManufacturing (purchased goods and services) 9,400,000 13,400,000 16,200,000 16,100,000 18,900,000\nProduct transportation (upstream and downstream) 1,500,000 1,900,000 1,750,000 1,800,000 1,400,000', 'for scope 2 emissions from the purchase of \ndistrict heating, chilled water, and steam.\n6  Beginning in fiscal year 2020, we updated \nour methodology for calculating emissions \nfrom employee commute to reflect employees \nworking from home during COVID-19. \n7  For a detailed breakdown of carbon offset \npurchases applied to our corporate footprint, \nsee the carbon offsets table on the following  \npage.8  We retired 324, 100 m etric tons of carbon \ncredits from the Alto Mayo project  in Peru and \nChyulu Hills project  in Kenya to maintain carbon \nneutrality for our corporate emissions in fiscal \nyear 2022. This project is certified to the VCS \nand CCB  standards.', 'Improving the accuracy of our carbon \nfootprint is an ongoing process — as \nwe learn more, we refine our carbon \nmodels and adjust our climate \nroadmap. We also regularly revisit \nthe boundary of our carbon footprint \nas our data sources improve and our \nbusiness  evolves.Fiscal year\n2023 2022 2021 2020 2019\nCorporate emissions \n(metric\xa0tons\xa0CO 2e)2Gross emissions 324,100 324,000 166,380 334,430 573,730\nScope 1 55,200 55,200 55,200 47,430 52,730\nNatural gas, diesel, propane 35,300 39,700 40,070 39,340 40,910', '6  Beginning in fiscal year 2020, we updated \nour methodology for calculating emissions \nfrom employee commute to reflect employees \nworking from home during COVID-19. \n7  For a detailed breakdown of carbon offset \npurchases applied to our corporate footprint, \nsee the carbon offsets table on the following  \npage.8  We retired 324, 100 m etric tons of carbon \ncredits from the Alto Mayo project  in Peru and \nChyulu Hills project  in Kenya to maintain carbon \nneutrality for our corporate emissions in fiscal \nyear 2022. This project is certified to the VCS \nand CCB  standards.\n9  We retired 167, 000 m etric tons of carbon \ncredits from the Chyulu Hills project  in Kenya', 'End-of-life processing 70,000 80,000 80,000 60,000 60,000\nCarbon removals\nProduct carbon offsets -13,500 0 -500,00012 0 0\nTotal gross scope 3 emissions (corporate and product) (metric tons CO 2e) 15,980,000 20,545,800 23,128,400 22,550,000 24,980,000\nTotal gross carbon footprint (without offsets) (metric tons CO 2e)13 16,100,000 20,600,000 23,200,000 22,600,000 25,100,000\nTotal net carbon footprint (after applying offsets) (metric tons CO 2e)1215,600,000 20,300,000 22,530,000 22,530,000 25,100,000Notes:']","Yes, there is a summary of the corporate carbon offsets and their effects. Here's a breakdown:
+
+1. **Total Carbon Offsets**: The company has retired a total of 491,100 metric tons of carbon credits from the Alto Mayo project in Peru and the Chyulu Hills project in Kenya.
+
+2. **Carbon Offsets by Year**:
+   - In fiscal year 2022, the company retired 324,100 metric tons of carbon credits.
+   - In fiscal year 2021, the company retired 167,000 metric tons of carbon credits.
+
+3. **Effect of Carbon Offsets**: The company has maintained carbon neutrality for its corporate emissions in fiscal year 2022 by applying these offsets.
+
+4. **Carbon Offsets Table**: The company has provided a detailed breakdown of carbon offset purchases applied to its corporate footprint, which can be found on the following page.
+
+5. **Standards for Carbon Offsets**: The projects from which the carbon credits were retired are certified to the VCS (Verified Carbon Standard) and CCB (Climate, Community, and Biodiversity) standards.","Electricity 0 0 0 0 0
+Steam, heating, and cooling5 3,400 3,000 2,780 0 0
+Scope 3 412,800 265,800 108,400 287,000 521,000
+Business travel 225,700 113,500 22,850 153,000 326,000
+Employee commute6164,100 134,200 85,570 134,000 195,000
+Upstream impacts (scope 1) 18,300 10,600 0 0 0
+Work from home (market-based) 4,700 7,500 0 0 0
+Transmission and distribution loss (market-based) N/A N/A N/A N/A N/A
+Third-party cloud (market-based) 0 0 0 0 0
+Carbon removals
+Corporate carbon offsets7-471,400 -324,1008-167,0009-70,000100
+Product life 
+cycle emissions 
+(metric tons CO 2e)11Gross emissions (Scope 3) 15,570,000 20,280,000 23,020,000 22,260,000 24,460,000
+Manufacturing (purchased goods and services) 9,400,000 13,400,000 16,200,000 16,100,000 18,900,000
+Product transportation (upstream and downstream) 1,500,000 1,900,000 1,750,000 1,800,000 1,400,000
+Product use (use of sold products) 4,600,000 4,900,000 4,990,000 4,300,000 4,100,000
+End-of-life processing 70,000 80,000 80,000 60,000 60,000
+Carbon removals
+Product carbon offsets -13,500 0 -500,00012 0 0
+Total gross scope 3 emissions (corporate and product) (metric tons CO 2e) 15,980,000 20,545,800 23,128,400 22,550,000 24,980,000
+Total gross carbon footprint (without offsets) (metric tons CO 2e)13 16,100,000 20,600,000 23,200,000 22,600,000 25,100,000
+Total net carbon footprint (after applying offsets) (metric tons CO 2e)1215,600,000 20,300,000 22,530,000 22,530,000 25,100,000Notes: 
+• For data on years prior to 2019, please reference 
+past Environmental Progress  Reports.  
+• Totals might not add up due to  rounding. 
+1 Apple’s carbon footprint boundary is aligned 
+with the Greenhouse Gas (GHG) Protocol 
+framework and includes emissions that are 
+material and relevant to Apple, where data is 
+available. Apple’s carbon footprint includes 
+direct scope 1 emissions; indirect scope 2 
+emissions from purchased electricity, steam, 
+heating, and cooling; and indirect scope 3 
+emissions from purchased goods and services, 
+transportation and distribution, business travel, 
+employee commute, product use, and end of life.
+2 Apple is carbon neutral for corporate emissions 
+as of April 2020. Beginning in fiscal year 2022, 
+we’ve expanded our footprint boundary to 
+include scope 3 emissions associated with",1.0,0.9837969743820348
+How does the company promote recycling and waste reduction among its suppliers?,"['operations and throughout our supply chain. We \naim to\xa0eliminate waste where we and our suppliers \noperate.\xa0 These efforts include reducing the overall \namount of waste that we generate, innovating reuse \napproaches, and creating new recycling opportunities \nwith local businesses.Areas of impact\nMaterial recovery', 'to eliminating waste generated \nduring manufacturing and engaging \nwith local specialty recyclers and', 'partnerships and  innovation\nOur recycling strategy is a key part of our efforts \nto create circular supply chains. We provide or \nparticipate in product take-back and recycling \ncollection programs in 99 percent  of the countries \nwhere we sell products. Our customers can trade \nin devices for reuse or recycling at retail locations \nand through recycling programs offered by local \noperators around the world. They also have the \noption to do so online through programs like \nApple\xa0Trade  In.\xa0\nIn 2023 , we directed nearly 40, 000 m etric  tons  \nof electronic scrap globally to recycling  facilities  \nwith the help of customer and employee  programs.\nWe work with best-in-class recyclers to  maximize  \nthe potential of the recycling materials stream and', 'We also conserve resources by working to eliminate \nwaste. \xa0We work to reuse and recycle across our \noperations and throughout our supply chain. We \naim to\xa0eliminate waste where we and our suppliers \noperate.\xa0 These efforts include reducing the overall \namount of waste that we generate, innovating reuse \napproaches, and creating new recycling opportunities \nwith local businesses.Areas of impact\nMaterial recovery\nImproving how we collect end-of-life products and \ndeveloping recycling innovations so that we and others \ncan use old devices as raw material sources for the future.Product longevity\nDesigning durable hardware, using software updates \nto extend functionality, providing convenient access \nto safe and high-quality repair services, and directing', 'Resources\nSmarter Chemistry Reducing waste at our \ncorporate  facilities\nWe’re reducing the amount of waste generated \nin our corporate operations and directing more \nto recycling programs. In 2023, recycling and \ncomposting efforts allowed us to achieve a waste']","The company aims to eliminate waste where they and their suppliers operate. They work to reduce the overall amount of waste generated, innovate reuse approaches, and create new recycling opportunities with local businesses. 
+
+However, the specific details on how the company promotes recycling and waste reduction among its suppliers are not explicitly mentioned in the provided text. It is mentioned that they work to eliminate waste across their operations and throughout their supply chain, but the exact strategies or initiatives they use to engage their suppliers in recycling and waste reduction efforts are not specified.","of verification. We’ve spent the last seven years 
+expanding this program throughout our supply chain, 
+with suppliers in China, India, and Vietnam becoming 
+UL validated. Since we switched from individual site 
+verification to system-level verification, suppliers 
+participating in the assurance program can easily 
+apply their verification statements from  UL.
+Supplier capability development
+To address the challenge of waste classification for 
+suppliers across different countries and regions, 
+we’ve created the Apple Recommended Waste 
+Category List that provides standardized guidance 
+on how to classify different types of waste. This has 
+been implemented widely and used by suppliers 
+in the Zero Waste Program. Suppliers have also 
+received access to training and coaching on waste 
+classification to support their efforts in separating 
+waste while promoting waste reduction, reuse, 
+and recycling. 
+The data we’ve aggregated summarizes the top 
+10 waste streams — including plastics, papers, 
+and metals — and their corresponding diversion 
+solutions. This provides a valuable perspective on the 
+waste footprint across our supply chain; it also shows 
+us where we can expend our efforts on material 
+utilization to reduce the amount of waste sent to 
+incineration or landfill.Starting in 2022, Apple organized a series of 
+webinars with suppliers, policymakers, and industrial 
+leaders to share their experiences in the Zero 
+Waste Program with participating suppliers and 
+those who plan to join. These sessions provide an 
+opportunity to discuss lessons learned implementing 
+the Zero Waste Program, best practices around the 
+compliance requirements of waste management, and 
+emerging recycling and reduction  technologies.
+We’re focused on expanding the impact of the Zero 
+Waste Program in our supply chain and beyond. In 
+2023, we launched a zero-waste education initiative 
+in India. Supported by our Supplier Employee 
+Development Fund, we’ve been able to design 
+a series of zero-waste-related trainings specific 
+to India for supplier leadership, employees, and 
+members of local  communities.
+We’ve offered several learning programs in India that 
+cover sustainability basics, the roadmap for achieving 
+zero waste, and best practices in waste management. 
+These include supplier classroom sessions in 
+Bangalore and Chennai focused on leadership 
+capabilities and training to help scale the Zero Waste 
+Program, as well as community e-learning resources 
+to introduce sustainable living, domestic composting, 
+and basic waste management beyond the workplace 
+that can benefit  everyone. 2024  Environmental Progress Report  55 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives
+Apple 2030
+Resources
+Smarter Chemistry FEATURE
+Green buildings 
+Whether we’re constructing a 
+data center or corporate office or 
+restoring a historic site to house a 
+retail store, we have an opportunity 
+to advance our vision of the world 
+we’d like to live in — one that’s 
+inclusive and accessible, reflects 
+the value we place on creativity 
+and innovation, and furthers our 
+environmental  goals.
+Our environmental approach to design and 
+construction adheres to industry-recognized best 
+practices for green buildings that promote renewable 
+energy, water conservation, energy efficiency, and 
+responsible material sourcing. As of 2023, 108 of our 
+corporate offices, data centers, retail stores across 
+the world, totaling more than 18 m illion square feet 
+of green building space, are Leadership in Energy 
+and Environmental Design (LEED) or Building 
+Research Establishment Environmental Assessment",1.0,0.0
+How do companies track their environmental impact over the years?,"['2024  Environmental Progress Report  110 Engagement and Advocacy Environmental Initiatives Data Introduction Contents AppendixReport notes\nAbout this report\nThis report is published annually and focuses primarily on fiscal \nyear activities. This report addresses environmental impacts and \nactivities at Apple facilities (corporate offices, data centers, and \nretail stores), as well as the life cycle impacts of our products,', '2024  Environmental Progress Report  110 Engagement and Advocacy Environmental Initiatives Data Introduction Contents AppendixReport notes\nAbout this report\nThis report is published annually and focuses primarily on fiscal \nyear activities. This report addresses environmental impacts and \nactivities at Apple facilities (corporate offices, data centers, and \nretail stores), as well as the life cycle impacts of our products, \nincluding in the manufacturing, transportation, use, and end-\nof-life phases. To provide feedback on this report, please \ncontact environment-report@apple.com .\nReporting year\nWe track our environmental progress based on Apple’s fiscal year. \nAll references to a year throughout the report refer to Apple’s fiscal', 'are not a fair representation of the data and information;  \n• Apple has established appropriate system s for the collection, aggregation and analysis of \nrelevant environmental information , and has implemented underlying internal assurance \npractices that provide a reasonable degree of confidence that such information is complete and \naccurate .  \n \n  2024  Environmental Progress Report  98 Engagement and Advocacy Environmental Initiatives Data Introduction Contents Appendix \n  \n \nApex  Companies, LLC  Page 5 of 5  \nStatement of independence, integrity  and competence  \n \nApex  has implemented a Code of Ethics across the business to maintain  high ethical standards among \nstaff in their day to day business activities.  We are particularly vigilant in the prevention of conflicts of \ninterest.   \nNo member of the assurance team has a business relationship with  Apple, its Directors or Managers', 'the LCA model. Combining product-\nspecific information with emission \ndata in our LCA allows us to compile \ndetailed results for greenhouse gas \nemissions as they relate to each \nproduct. The data and modeling \napproaches are checked for quality \nand accuracy by the Fraunhofer \nInstitute in Germany.2024  Environmental Progress Report  95 Engagement and Advocacy Environmental Initiatives Data Introduction Contents AppendixAppendix C2024  Environmental Progress Report  96 Engagement and Advocacy Environmental Initiatives Data Introduction Contents Appendix\nA: Corporate facilities energy supplement\nB: Apple’s life cycle assessment methodology\nC: Assurance and review statements\nNet comprehensive carbon footprint, facilities energy, \ncarbon, waste, paper, and water data (Apex)\nProduct carbon footprint (Fraunhofer Institute)', 'to comply with new environmental regulations and \nwith policymakers on future  standards. \nWe listen to a diverse set of stakeholders to learn how to improve our approaches to environmental stewardship.\n2024  Environmental Progress Report  68 Environmental Initiatives Data Appendix Introduction Contents Engagement and AdvocacyAchieving change together\nAs industry leaders, we have  \na responsibility to influence \nchange\xa0— through  advocating  \nfor policy and directly  engaging  \nwith our stakeholders. We \nparticipate in collective  action  \nas the best means to  address  \nurgent environmental issues. \nProactively sharing our experiences \nand contributing to collaborative \nefforts in our areas of focus \nand expertise help us better \nrealize\xa0environmental goals  that  \nwe share with\xa0 our stakeholders.Supply  chain']","According to the provided context, Apple tracks its environmental progress based on its fiscal year. This means that the company monitors and reports its environmental impacts and activities at its facilities (corporate offices, data centers, and retail stores), as well as the life cycle impacts of its products, including manufacturing, transportation, use, and end-of-life phases, on a yearly basis.
+
+Additionally, Apple has established a system for collecting, aggregating, and analyzing relevant environmental information, and has implemented internal assurance practices to ensure the accuracy and completeness of this information. This suggests that the company uses a systematic approach to track its environmental impact over the years.
+
+Furthermore, Apple uses a life cycle assessment (LCA) model to compile detailed results for greenhouse gas emissions as they relate to each product. The data and modeling approaches are checked for quality and accuracy by the Fraunhofer Institute in Germany. This indicates that the company uses a rigorous and transparent methodology to track its environmental impact.
+
+Overall, Apple's approach to tracking its environmental impact involves a combination of systematic data collection, analysis, and assurance, as well as the use of a robust LCA model to provide a comprehensive understanding of its environmental footprint.","NSAI certifies that  the aforementioned company ha s been assessed and 
+deemed to comply with the provisions of the standard referred to above in 
+respect of: - 
+ 
+The management of all EMEA operational activities related to manufacturing, 
+sales, delivery and after sales support for direct retail and channel customers  
+ 
+ 
+  
+Approved by : 
+Stewart Hickey  
+Head - Business Excellence, NSAI     
+ Registration Number: 14.0202  
+Original Registration: 20 March 2001  
+Last amended on:  14 July 2021  
+Valid from: 14 July 2021  
+Remains valid to: 10 July 2024  
+ This certificate remains valid on condition 
+that the Approved Environmental  
+Management System is maintained in an 
+adequate and effi cacious manner.   NSAI is a 
+partner of IQNet – the international 
+certification networ k (www.iqnet -
+certification.com ) Partner of  
+ 
+ 
+All valid certifications are listed on NSAI’s website –  www.nsai.ie .  The continu ed validity of this certificate  
+may be verified under “Certified Company Search”  
+ 
+NSAI (National Standards Authority of Ireland), 1 Swift Square, Northwood, Santry, Dublin 9, Ireland T +353 1 807 3800 E: info@nsai.ie  www.nsai.ie  
+ 
+ 
+2024  Environmental Progress Report  110 Engagement and Advocacy Environmental Initiatives Data Introduction Contents AppendixReport notes
+About this report
+This report is published annually and focuses primarily on fiscal 
+year activities. This report addresses environmental impacts and 
+activities at Apple facilities (corporate offices, data centers, and 
+retail stores), as well as the life cycle impacts of our products, 
+including in the manufacturing, transportation, use, and end-
+of-life phases. To provide feedback on this report, please 
+contact environment-report@apple.com .
+Reporting year
+We track our environmental progress based on Apple’s fiscal year. 
+All references to a year throughout the report refer to Apple’s fiscal 
+years, unless “calendar year” is specified. Apple’s fiscal year is the 
+52- or 53-week period that ends on the last Saturday of September.
+Data assurance
+We obtain third-party verification for some of the information in 
+this report from Apex Companies and the Fraunhofer Institute in 
+Germany (as denoted in Appendix C ). Data in this report, including 
+data or verification from third parties, reflects estimates using 
+methodologies and assumptions believed to be reasonable and 
+accurate. Those estimates, methodologies, and assumptions may 
+change in the future as a result of new information or subsequent 
+developments, or they ultimately may prove to be inaccurate. 
+In addition, the bulk of Apple’s recycled content data is certified and 
+thus verified by a third party. Less than 5 percent  of the total mass 
+shipped in Apple products in fiscal year 2023 is recycled content 
+data that is either supplier verified, meaning it has been reported by the supplier and cross-checked by Apple, or supplier reported, 
+meaning it has been reported by the supplier based on production 
+and allocation values. In all cases, Apple defines recycled content in 
+alignment with ISO 14021. Product claims are made as of the launch 
+date of those individual products, and they are accurate as of 
+product  launch.
+Forward-looking statements
+The report is provided voluntarily, and does not cover all information 
+about our business. References in this report to information should",1.0,0.6701333298908687
+What kinds of waste management education do employees receive?,[],"Based on the provided context, I don't have any specific information about the company or organization. However, I can provide general information about waste management education for employees.
+
+In many organizations, employees receive various types of waste management education to promote sustainability and reduce waste. Some common types of education include:
+
+1. **Waste sorting and segregation**: Employees learn how to properly sort and segregate different types of waste, such as recyclables, organics, and hazardous waste.
+2. **Waste reduction and minimization**: Employees are educated on ways to reduce waste generation, such as reducing paper usage, minimizing packaging, and choosing products with minimal waste.
+3. **Recycling and composting**: Employees learn about the importance of recycling and composting, and how to participate in these programs.
+4. **Hazardous waste handling**: Employees receive training on how to handle and dispose of hazardous waste, such as chemicals and electronics.
+5. **Sustainable practices**: Employees are educated on sustainable practices, such as using reusable bags, water bottles, and coffee cups.
+6. **Waste management policies and procedures**: Employees learn about the organization's waste management policies and procedures, including reporting waste incidents and participating in waste audits.
+7. **Environmental awareness**: Employees are educated on the environmental impacts of waste management and the importance of reducing, reusing, and recycling.
+
+These types of education can be provided through various channels, such as:
+
+1. **Training sessions**: In-person training sessions or workshops.
+2. **Online courses**: Online courses or webinars.
+3. **Posters and signage**: Visual reminders and signage in the workplace.
+4. **Email campaigns**: Regular email updates and reminders.
+5. **Incentive programs**: Incentive programs to encourage employees to participate in waste reduction and recycling efforts.
+
+The specific types and frequency of waste management education may vary depending on the organization's size, industry, and waste management goals.","2022. We also limited landfill waste from our global 
+operations to about 17, 400 m etric tons.80 
+We’ve continued our efforts to make progress on 
+waste diversion since achieving our first zero-waste 
+certification, UL Solution’s Zero Waste to Landfill 
+Validation, in 2015 for our campus in Cork, Ireland. 
+In 2023, our Taiwan Technology Center became the 
+second Apple facility to receive the UL Solutions 
+Zero Waste to Landfill Validation.81 Our corporate 
+offices in Sacramento, California, as well as our 
+data center in Viborg, Denmark, received TRUE 
+certification in 2023, joining our data centers in 
+Mesa, Arizona, and Prineville, Oregon.82 These 
+facilities achieved TRUE Platinum, the highest 
+certification level. TRUE recognizes facilities that 
+divert more than 90 percent  of waste for recycling, 
+compost, or reuse.Promoting material reuse,  
+composting, and waste diversion across  
+our corporate and retail locations
+We prioritize finding opportunities to recycle 
+construction and demolition waste and recently 
+accomplished the following:
+• In 2023, our recycling and source  separation  
+from corporate office and data center construction 
+and demolition efforts resulted in a waste 
+diversion rate of 88 percent  — approximately 
+23,600 metric  tons.
+• New initiatives at our San Diego and Culver City 
+campuses, alongside more than 30 participating 
+locations, achieved an average diversion rate of 
+91 percent .
+• We also developed several specialty recycling 
+initiatives to return materials back to their original 
+supplier. The program salvaged more than 
+100 m etric tons of material, yielding  over  
+50 m etric tons of both ceiling tile and sheetrock, 
+over 40 m etric tons of carpet tile, and  over  
+6 metric tons of glass to reuse the materials in 
+new  products.Reusable Air Filters:  In 2023, we fully switched to 
+reusable air filters to reduce waste sources — like 
+packaging materials and commonly used equipment. 
+Previously, no off-the-shelf reusable air filters were 
+available for our application. In 2019, we partnered 
+with an industry-leading automotive filtration and 
+technology company to design a sustainable solution 
+that met very specific design criteria for our design 
+centers. And to date more than 58,000 reusable 
+high-performance air filters — which are also 
+available for other companies to use — have been 
+placed in Apple-managed facilities worldwide. By 
+replacing disposable air filters with reusable ones, 
+we avoid landfilling 25 tons of dirty filters each year. 
+Further, the reusable air filters are more energy 
+efficient, leading to 35 percent  savings  in  
+fan energy  use.
+Managing hazardous waste: We remain committed 
+to safely and responsibly managing hazardous waste. 
+To make sure that wastes are treated, recycled, or 
+incinerated according to safety and environmental 
+standards in the U.S., Apple performs audits of 
+treatment, storage, and disposal facilities (TSDFs), 
+with seven performed in 2023. We continually 
+reevaluate the facilities that dispose of and manage 
+hazardous and regulated wastes, working to 
+assess disposal methods, availability, economics, 
+and sustainability.Driving solutions internally through 
+communication, reporting, and education
+Our employees play a critical role in reporting on 
+waste and facilitating waste audits at our locations.",0.0,0.0
+How can I recycle my old electronic devices responsibly?,"['We also conserve resources by working to eliminate \nwaste. \xa0We work to reuse and recycle across our \noperations and throughout our supply chain. We \naim to\xa0eliminate waste where we and our suppliers \noperate.\xa0 These efforts include reducing the overall \namount of waste that we generate, innovating reuse \napproaches, and creating new recycling opportunities \nwith local businesses.Areas of impact\nMaterial recovery\nImproving how we collect end-of-life products and \ndeveloping recycling innovations so that we and others \ncan use old devices as raw material sources for the future.Product longevity\nDesigning durable hardware, using software updates \nto extend functionality, providing convenient access \nto safe and high-quality repair services, and directing', 'participate in product take-back and recycling \ncollection programs in 99 percent  of the countries \nwhere we sell products. Our customers can trade \nin devices for reuse or recycling at retail locations \nand through recycling programs offered by local \noperators around the world. They also have the \noption to do so online through programs like \nApple\xa0Trade  In.\xa0\nIn 2023 , we directed nearly 40, 000 m etric  tons  \nof electronic scrap globally to recycling  facilities  \nwith the help of customer and employee  programs.\nWe work with best-in-class recyclers to  maximize  \nthe potential of the recycling materials stream and \ndrive our efforts to close the loop on key materials. \nWe define best-in-class recyclers as those capable of', 'for free.\nOur customers drive the success of our trade-in \nprograms and those of third parties and each product \nthat’s refurbished and reused contributes to reducing \nour overall environmental  footprint.\nSome device parts can also be reused. We continue \nto expand the number of parts that can be recovered \nor refurbished to our high quality and performance \nstandards so they can be\xa0reused as replacements. \nThis enables us to reduce the need to create spare \nparts as we repair devices. We also remain focused \non opportunities to reuse accessories sent for \nrecycling. For example, we send collected power \ncables and adapters that still function to our final \nassembly sites, where they power products used \non\xa0production  lines.12.8M', 'standards so they can be\xa0reused as replacements. \nThis enables us to reduce the need to create spare \nparts as we repair devices. We also remain focused \non opportunities to reuse accessories sent for \nrecycling. For example, we send collected power \ncables and adapters that still function to our final \nassembly sites, where they power products used \non\xa0production  lines.12.8M\nWe’ve sent nearly \n12.8\xa0million devices and \naccessories to new owners \nfor reuse in 2023.2024  Environmental Progress Report  44 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives\nApple 2030\nResources\nSmarter Chemistry Material\xa0recovery\nEven after a product reaches the \nend of its life, the materials within', 'around the world\xa0to return end-of-life devices to \nApple so that materials\xa0can be reintroduced to the \ncircular economy. To learn more about our recycling \nprograms, visit the Apple Reuse and Recycling \nProgram web  page .\nWe work with best-in-class recyclers to drive our efforts to close the loop on key materials used in our products.\n2024  Environmental Progress Report  46 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives\nApple 2030\nResources\nSmarter Chemistry Developing new approaches \nto disassembly and  recovery\nInnovation plays a key role in realizing the potential  of \nrecycling Apple products. We continue to develop \nbetter, more efficient means of disassembling \nproducts that maximize material recovery while']","You can recycle your old electronic devices responsibly by following these steps:
+
+1. **Check if your device is eligible for trade-in**: Visit the Apple Trade In website to see if your device is eligible for trade-in and recycling.
+2. **Visit an Apple Store or authorized retailer**: You can trade in your device at an Apple Store or an authorized retailer, such as Best Buy.
+3. **Use the Apple Reuse and Recycling Program**: You can also use the Apple Reuse and Recycling Program to recycle your device online or by mail.
+4. **Participate in local recycling programs**: Check with your local government or waste management provider to see if they have electronic waste recycling programs in place.
+5. **Contact a local recycler**: You can also contact a local recycler or a certified electronics recycling facility to see if they accept your device for recycling.
+
+Additionally, you can also consider the following options:
+
+* **Apple's Device Trade-In Program**: You can trade in your device for a gift card or store credit.
+* **Apple's Recycling Program**: You can recycle your device for free, and Apple will ensure that it is recycled responsibly.
+* **Local non-profit organizations**: Some local non-profit organizations, such as Goodwill or the Salvation Army, may also accept electronic devices for recycling.
+
+Remember to always erase your personal data from the device before recycling it, and make sure to follow any local regulations and guidelines for electronic waste recycling.","and conserving  resources.Approach
+We aim to design our products for optimal 
+material recovery, innovate recycling 
+technology, and work with others to help  
+build circular supply chains. 2023 progress
+40K
+MT of scrap
+Directed nearly 40,000 metric tons 
+of electronic scrap to recycling 
+facilities globally with the help of 
+customer and employee programs
+17
+categories
+Deployed autonomous mobile 
+robots (AMRs) to transport materials 
+across our operations, as well as an 
+automated product sorter that uses 
+machine learning to identify and sort 
+our products into 17 categories
+29
+models
+Expanded the capabilities of Daisy, 
+our disassembly robot, enabling it 
+to quickly and skillfully take apart 
+29 iPhone models — including 
+various models between iPhone 
+5 and iPhone 14 Pro Max — into 
+discrete componentsFostering next generations of recycling
+Committing to a long-term approach to 
+recycling innovation, relying on and continually 
+improving current approaches while nurturing 
+new and emerging technologies. And 
+supporting initiatives that set out to redefine 
+disassembly and material recovery for Apple 
+products — and throughout our industry.Recycler partnerships and innovation
+Positioning recycling strategy as a key part 
+of our efforts to create circular supply chains 
+and working to make it easier for customers 
+to recycle our products.
+Disassembly and recovery advancement
+Continuing to develop better, more efficient 
+means of disassembling products that maximize 
+material recovery while minimizing  waste. 
+In 2023, we expanded the capabilities of Daisy, which can now disassemble 29 iPhone models into discrete components.
+2024  Environmental Progress Report  45 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives
+Apple 2030
+Resources
+Smarter Chemistry Optimizing recycling through 
+partnerships and  innovation
+Our recycling strategy is a key part of our efforts 
+to create circular supply chains. We provide or 
+participate in product take-back and recycling 
+collection programs in 99 percent  of the countries 
+where we sell products. Our customers can trade 
+in devices for reuse or recycling at retail locations 
+and through recycling programs offered by local 
+operators around the world. They also have the 
+option to do so online through programs like 
+Apple Trade  In. 
+In 2023 , we directed nearly 40, 000 m etric  tons  
+of electronic scrap globally to recycling  facilities  
+with the help of customer and employee  programs.
+We work with best-in-class recyclers to  maximize  
+the potential of the recycling materials stream and 
+drive our efforts to close the loop on key materials. 
+We define best-in-class recyclers as those capable of 
+recovering materials at high rates and doing so with 
+better environmental and safety performance. We 
+verify recyclers’ compliance with our Supplier Code 
+of Conduct and Supplier Responsibility Standards 
+through third-party assessments. In addition, we 
+look for our recyclers to maintain regional leading 
+certifications, such as WEEELABEX, e-Stewards®,  
+or R2. We assess our recyclers regularly for 
+compliance with standards, regulations, and best 
+practices in the areas of labor and human rights; 
+security; and environment, health, and safety  (EHS). In 2023 , we conducted 91 recycler assessments. 
+We’ve increasingly sought out specialty providers 
+capable of handling specific material streams to 
+enhance the quantity and quality of materials. This 
+global footprint of recyclers also helps us build a",0.0,0.9767759922113868
+What role does clean energy play in the operations of data centers?,"['the manufacturing of Apple products.\nEnergy efficiency and \nrenewable electricity \naddresses emissions from:\nIndirect emissions \n(Scope 2)\nProduct  manufacturing  \n(Scope 3)\nProduct use  \n(Scope 3)2024  Environmental Progress Report  24 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives\nApple 2030\nResources\nSmarter Chemistry Data centers:\xa0 Data centers are traditionally \nenergy intensive, requiring significant resources \nto cool heat-generating servers and IT equipment. \nThat’s why we’re continuously monitoring and \nimproving the controls for our cooling systems. This \nretrospective view often enables us to increase the \ncooling capacity of our existing facilities, thereby \nmaximizing the number of servers within our data', 'The majority of our online services are provided \nby our own data centers; however, we also use \nthird-party colocation facilities for additional data \ncenter capacity. While we don’t own these shared \nfacilities and use only a portion of their total capacity, \nwe include our portion of their energy use in our \nrenewable energy  goals.\nStarting in January 2018, 100 percent  of our power \nfor colocation facilities was matched with renewable \nenergy generated within the same country or regional', 'and cool-weather hours, which, along with water \nstorage, allows the chillers to be idle 75 percent  \nof\xa0the time.\nMaiden, North Carolina: Grid mix versus. Apple-sourced renewable energy  \nElectricity use in 2023 : 453 million kWh  \nEmissions avoided in 2023 : 121,00 million MT CO 2e3\nDefault grid mix % x Apple actual renewable energy allocation %\nGas 43 Apple’s solar projects 88\nNuclear 32 Apple’s wind projects 12\nCoal 11 Source: 2023 energy data. \nRenewable 10\nHydro 4\nSource: eGRID 2022.2  In our 2023 Environmental Progress Report, \nwe stated that we operate eight data centers.', 'maximizing the number of servers within our data \ncenter  footprint. \nIn\xa02023, we continued to see energy savings at data \ncenters. A proprietary server design we deployed \nin 2021 that focused on energy and computing \nefficiency resulted in an additional\xa0 36 m illion \nkilowatt-hours per year in energy  savings.\nNew facilities: When designing new  facilities,  \nor renovating existing facilities, we evaluate each \nmajor system to ensure we’re managing our energy \nfootprint. We select LED fixtures and install sensors \nand photocells to reduce light levels based on \noccupancy and the level of natural daylight. We \ninstall high efficiency heating and cooling systems \nand transformers to reduce energy consumption from', 'Product  manufacturing  \n(Scope 3)\nProduct use  \n(Scope 3)2024  Environmental Progress Report  24 Engagement and Advocacy Data Appendix Introduction Contents Environmental Initiatives\nApple 2030\nResources\nSmarter Chemistry Data centers:\xa0 Data centers are traditionally \nenergy intensive, requiring significant resources \nto cool heat-generating servers and IT equipment. \nThat’s why we’re continuously monitoring and \nimproving the controls for our cooling systems. This \nretrospective view often enables us to increase the \ncooling capacity of our existing facilities, thereby \nmaximizing the number of servers within our data \ncenter  footprint. \nIn\xa02023, we continued to see energy savings at data \ncenters. A proprietary server design we deployed']","According to the provided context, clean energy plays a significant role in the operations of Apple's data centers. Specifically, Apple has implemented the following clean energy initiatives:
+
+1. **Renewable energy matching**: Starting in January 2018, Apple matched 100% of its power for colocation facilities with renewable energy generated within the same country or region.
+2. **Solar and wind projects**: Apple has invested in solar and wind projects, which provide 88% and 12% of the renewable energy for its data centers, respectively.
+3. **Energy-efficient cooling systems**: Apple has implemented energy-efficient cooling systems, such as chillers that can be idle 75% of the time due to water storage and cool-weather hours.
+4. **Energy savings**: Apple's proprietary server design, deployed in 2021, resulted in an additional 36 million kilowatt-hours per year in energy savings.
+
+These initiatives demonstrate Apple's commitment to reducing its carbon footprint and reliance on fossil fuels in its data center operations.","(operational).2024  Environmental Progress Report  87 Engagement and Advocacy Environmental Initiatives Data Introduction Contents AppendixDash indicates unavailable data.
+N/A = Gas use at colocation facilities is considered 
+outside of Apple’s operational control.
+1 Scope 2 market-based emissions from 
+purchased electricity is zero. But, we also 
+account for purchased steam, heating, and 
+cooling, which resulted in 3, 400 m etric tons of 
+emissions in fiscal year  2023. Fiscal year 2023 energy and carbon footprint (corporate facilities)
+The table below provides a detailed breakdown of 2023 energy use, which we used to calculate our greenhouse gas emissions.
+LocationScope 1 x Scope 2
+Total gas
+(MMBtu)Renewable
+biogas (MMBtu)Scope 1 emissions (metric 
+tons CO 2e)Electricity
+(million kWh)Renewable electricity 
+(million kWh)Scope 2 emissions 
+(market-based, metric 
+tons CO 2e)1
+Corporate 1,007,071 746,506 42,746 940 940 0
+Cupertino, CA 805,271 202,306 32,027 427 427 0
+Elk Grove, CA 10,175 0 540 14 14 0
+Austin, TX 24,826 0 1,319 113 113 0
+Other U.S. 104,718 544,200 5,562 143 143 0
+Cork, Ireland 24,219 0 1,286 16 16 0
+Singapore 518 0 28 18 18 0
+China 960 0 51 41 41 0
+Other international 36,384 0 1,933 168 168 0
+Data center 740 0 39 2,344 2,344 0
+Maiden, NC 0 0 0 453 453 0
+Mesa, AZ 524 0 28 488 488 0
+Newark, CA 0 0 0 0 0 0
+Prineville, OR 216 0 11 269 269 0
+Reno, NV 0 0 0 440 440 0
+Viborg, Denmark – – – 40 40 0
+Colocation facilities (U.S.) – – – 387 387 0
+Colocation facilities (international) – – – 96 96 0
+China – – – 171 171 0
+Retail stores 58,446 0 3,105 203 203 0
+Domestic (U.S.) 34,449 0 1,830 96 96 0
+International 23,997 0 1,275 107 107 0
+Total 1,066,257 746,506 45,890 3,199 3,199 02024  Environmental Progress Report  88 Engagement and Advocacy Environmental Initiatives Data Introduction Contents AppendixA focus on data centers
+We used over 2. 3 billion  kWh of electricity in 2023 
+to power our data centers and colocation facilities 
+around the world. We’re proud that 100 percent  
+of that electricity came from renewable sources 
+including solar, wind, biogas fuel cells, and low-
+impact hydropower. To cover our needs, we build our 
+own renewable power projects and work with utilities 
+to purchase clean energy from locally obtained 
+resources. We’re staying at 100 percent  even as",,0.8959196454298696
