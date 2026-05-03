@@ -1,29 +1,29 @@
 # Self-Correcting RAG Agent with Continuous Learning
 
-This project implements an advanced Multi-Agent Corrective RAG (CRAG) system designed to eliminate hallucinations and handle out-of-distribution queries through automated validation and real-time web augmentation.
+This project implements an advanced Multi-Agent Corrective RAG (CRAG) system designed to eliminate hallucinations and handle out-of-distribution queries through automated validation and real-time web augmentation. The system acts as an evaluate-before-generating pipeline that improves reliability in domain-specific technical QA. 
+
+The primary knowledge base is built upon the 2024 Apple Environmental Progress Report dataset, comprising 3,440 technical Q&A pairs.
 
 ## Architecture
 
-The system is orchestrated using LangGraph to manage a stateful workflow between specialized agents:
 
-1. Retriever Agent: Fetches the top-k document chunks from a FAISS vector database.
-2. Router Agent (Evaluator): Uses a local Llama 3.1-8B model to classify retrieved chunks as relevant, ambiguous, or irrelevant.
-3. Knowledge Refiner: Processes ambiguous data by decomposing chunks into atomic facts to remove noise.
-4. Web Search Agent: Triggers an external search via DuckDuckGo when local knowledge is deemed irrelevant or out of scope.
-5. Dynamic Index Updater: Vectorizes new web findings and updates the local FAISS index, closing the continuous learning loop.
+The CRAG pipeline operates as a directed acyclic graph (DAG) built with LangGraph, transitioning from a linear "blind" retriever to a "retrieve-grade-refine" model. It utilizes a hybrid inference strategy for high-speed routing and localized generation.
 
-## Dataset and Preprocessing
+* **Router Agent:** Uses the Groq API as a deterministic classifier (temperature 0) to categorize queries as *greeting*, *apple_quest*, or *out_of_scope* before retrieving data.
+* **Retriever:** A local FAISS index (`faiss.IndexFlatL2`) that performs exact brute-force L2 search. Chunks are processed using a `RecursiveCharacterTextSplitter` (200 tokens, 10% overlap) and embedded via `all-MiniLM-L6-v2`.
+* **Grader Agent:** Powered by Groq, this strict filter analyzes the semantic relevance of retrieved documents against the original query. If the context is deemed irrelevant, it triggers the web search node.
+* **Web Search Node:** A dynamic fallback activated by the Grader to perform real-time searches via DuckDuckGo, replacing failed FAISS context with updated external information.
+* **Generator Agent:** A custom-deployed `Llama-3.1-8B-Instruct` model synthesizes the final response, strictly anchored to the validated local or web-sourced context to prevent hallucinations.
 
-Source: Apple Environmental Progress Report 
-Link: https://huggingface.co/datasets/AdamLucek/apple-environmental-report-QA-retrieval
+## Performance & Results
 
-To build the knowledge base, the original source passages were processed into a FAISS vector index. The text was re-chunked into sub-chunks of 200 tokens with a 20-token overlap. This ensures compatibility with the 256-token limit of our embedding model, all-MiniLM-L6-v2, preventing information loss during retrieval. 
+The system was evaluated against 800 deduplicated queries using the RAGAS framework alongside a plain RAG baseline. The corrective architecture successfully reduced hallucinations when faced with out-of-knowledge queries.
 
-## Hardware Requirements
-
-Running the full pipeline and the local Llama 3.1-8B model requires a GPU. 
-For basic execution, a minimum of 16GB VRAM is recommended (e.g., an NVIDIA T4 via Google Colab).
-For our large-scale evaluation, we utilized a Chameleon cluster with 4x NVIDIA Tesla P100 GPUs, leveraging 4-bit quantization and model parallelism to distribute the VRAM load.
+| Metric | Plain RAG | Corrective RAG (CRAG) |
+| :--- | :--- | :--- |
+| **Faithfulness** | 0.8868 | 0.9002 |
+| **Answer Relevancy** | 0.7389 | 0.8187 |
+| **Hallucination Rate** | 0.1132 | 0.0998 |
 
 ## Dependencies
 
@@ -42,24 +42,17 @@ The project relies on Python 3.10+ and the following core libraries:
 
 ## Reproduction Steps
 
-1. Environment Setup
-Clone the repository and install the dependencies in requierements.txt. If you are running this in Google Colab, ensure your runtime is set to a T4 GPU. 
+1. Environment Setup: Clone the repository and install the dependencies in `requirements.txt`. If you are running this in Google Colab, ensure your runtime is set to a T4 GPU.
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Build the FAISS Index: Run the indexing script first. This will download the dataset from Hugging Face, apply the token-aware chunking strategy, generate the sentence embeddings, and save the FAISS index locally.
 
-```bash
-pip install -r requirements.txt
-```
+3. Run the Baseline RAG: Execute the baseline_rag.ipynb notebook to run the plain RAG on the 800 test questions. You will obtain the RAGAS score (faithfulness, answer relevancy, and hallucination rate) in the results.
 
-3. Build the FAISS Index
-Run the indexing script first. This will download the dataset from Hugging Face, apply the token-aware chunking strategy, generate the sentence embeddings, and save the FAISS index locally.
+4. Run the LangGraph Pipeline: Execute the main script to start the agentic workflow. You will need to provide a Hugging Face API token with access to the Meta Llama-3.1-8B-Instruct repository. 
 
-4. Run the baseline RAG
-Execute the baseline_rag.ipynb notebook to run the plain RAG on the 800 test questions. You will obtain the RAGAS score (faithfullness, answer relevancy and hallucination rate) in the results.
- 
-5. Run the LangGraph Pipeline
-Execute the main script to start the agentic workflow. You will need to provide a Hugging Face API token with access to the Meta Llama 3.1-8B-Instruct repository. The system will accept queries, retrieve documents, grade their relevance, and fall back to web search if necessary.
-
-6. Run the Evaluation
-To reproduce the evaluation metrics, run the RAGAS evaluation script. The script is configured to evaluate rows sequentially to prevent timeout errors and resource exhaustion.
+5. Run the Evaluation: To reproduce the evaluation metrics, run the RAGAS evaluation script.
 
 ## Repository Structure
 
@@ -89,3 +82,5 @@ To reproduce the evaluation metrics, run the RAGAS evaluation script. The script
 ├── README.md                     # Project documentation
 ├── requirements.txt              # Python dependencies
 └── setup_env.sh                  # Environment setup script
+
+```
